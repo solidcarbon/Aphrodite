@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.3 (2026-11-05)
+- **Theme-matched window and taskbar icon.** When you switch themes or customize colours in Studio, Aphrodite's window and taskbar icon now updates automatically to match your active window background and accent colours.
+
 ## 2.0.2 (2026-11-05)
 - **Aphrodite for Linux.** Official Linux packages (`.AppImage` and `.deb`) now ship alongside Windows on the releases page, with automatic updates for AppImage installs, Linux font fallbacks in Studio, and platform-matched labels.
 

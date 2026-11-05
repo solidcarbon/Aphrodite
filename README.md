@@ -115,7 +115,7 @@ Open **Studio** from the sidebar to customize every part of Aphrodite in real ti
 
 <img src="assets/studio.gif" width="100%" alt="Animated tour of Aphrodite Studio: cycling through built-in themes, surface colour pickers, corner roundness and font controls, custom toolbar sliders, and live interface CSS">
 
-- **13 built-in themes:** *Aphrodite*, *Sage*, *Harbor*, *Plum*, *Rosewater*, *Graphite*, *Typewriter*, *Lavender*, *Ember*, *Glacier*, *Moss*, *Espresso*, and *Midnight*.
+- **13 built-in themes:** *Aphrodite*, *Sage*, *Harbor*, *Plum*, *Rosewater*, *Graphite*, *Typewriter*, *Lavender*, *Ember*, *Glacier*, *Moss*, *Espresso*, and *Midnight* — and Aphrodite's window & taskbar icon recolours automatically to match your active theme.
 - **Every surface & text colour:** Customize window, page, panel, input, sidebar, and toolbar colours separately for light and dark mode, or share themes as a short `APH1.` code.
 - **Shape, typography & layout:** Adjust corner roundness (`0%–160%`), sidebar width, heading & interface fonts, tab height, tab title motion (*Typewriter*, *Pencil*, *Slide*), and new-tab wallpapers.
 - **Your own buttons, sliders & CSS:** Add custom buttons, live CSS variable sliders, and switches to the toolbar or sidebar; write custom CSS for any website; or inspect and restyle any of Aphrodite's 90+ named interface parts.
