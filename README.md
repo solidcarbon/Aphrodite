@@ -174,6 +174,16 @@ No. Aphrodite is free to use, but it's proprietary software. The open-source par
 
 ---
 
+## About this project
+
+Aphrodite isn't backed by a huge company, a big engineering team, or someone who is extremely experienced in coding. It's a personal project by a solo builder, and I don't come from a traditional coding background. I started building Aphrodite because I was bored and wanted a private, custom browser that felt like mine and gave me the security and privacy I wanted—and modern AI tools finally made it possible to bring that vision to life. Therefore, if you don't trust or support AI tools' capabilities and safety measures, I would not recommend downloading this browser, as most of it was built using them (thanks to all the agents that worked on this project).
+
+Because this is an independent project, it will likely have errors, rough spots, mistakes, and things that were missed—and it also means your feedback goes directly to me. If something breaks, doesn't work properly, feels awkward, could be better, or if you just have a crazy idea that could be cool, write to **simplecarbon@proton.me** or open an issue. I'd love to hear from all the testers and improve this project based on your experiences.
+
+— **SolidCarbon**, SolidCarbon Works
+
+---
+
 <div align="center">
 
 [Changelog](CHANGELOG.md) · [Privacy policy](PRIVACY.md) · [EULA](EULA.md) · [Trademarks](TRADEMARKS.md) · [Third-party notices](THIRD-PARTY-NOTICES.md)
