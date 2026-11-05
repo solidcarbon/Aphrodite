@@ -122,17 +122,17 @@ Sites can try to recognise your device from your graphics card, screen, fonts, a
 </tr>
 </table>
 
-## 📖 Reader view & everyday browsing
+## 📖 Split view, Reader view & everyday browsing
 
-<img src="assets/reader.png" alt="Reader view of a Wikipedia article">
+<img src="assets/reader.png" alt="Split view showing Reader view beside reading notes, with tab folders and sleeping tabs in the sidebar">
 
-Reader view, **vertical tabs**, **workspaces** (each with its own protection level, and its own logins if you want), tab folders, **split view**, a command palette (`Ctrl+K`), sleeping tabs, session restore, private windows and bookmark import from other browsers.
+**Split view** (`Ctrl+\`, or drag any tab onto the page), **Reader view** (`F9`), **vertical tabs**, **workspaces** (each with its own protection level, and its own logins if you want), **tab folders**, **sleeping tabs** that free memory automatically, a command palette (`Ctrl+K`), session restore, private windows and bookmark import from other browsers.
 
 ## 🎨 Studio: make it yours
 
-<img src="assets/studio.png" alt="Studio, Aphrodite's theme editor">
+<img src="assets/studio.png" alt="Four Studio themes side by side: Sage, Rosewater, Typewriter, and Midnight Dark">
 
-Themes, every colour, shape and type, layout, your own buttons and sliders, styles for websites, and CSS for any part of Aphrodite. Everything stays on your computer and survives updates.
+13 built-in themes (**Aphrodite**, **Sage**, **Harbor**, **Plum**, **Rosewater**, **Graphite**, **Typewriter**, **Lavender**, **Ember**, **Glacier**, **Moss**, **Espresso**, **Midnight**), every surface and text colour, corner roundness, typography, layout, your own toolbar buttons and sliders, styles for websites, and CSS for any part of Aphrodite. Everything stays on your computer and survives updates.
 
 ## 📚 A privacy guide that tells the truth
 
