@@ -130,7 +130,7 @@ Sites can try to recognise your device from your graphics card, screen, fonts, a
 
 ## 🎨 Studio: make it yours
 
-<img src="assets/studio.png" alt="Four Studio themes side by side: Sage, Rosewater, Typewriter, and Midnight Dark">
+<img src="assets/studio.png" alt="Studio, Aphrodite's theme editor">
 
 13 built-in themes (**Aphrodite**, **Sage**, **Harbor**, **Plum**, **Rosewater**, **Graphite**, **Typewriter**, **Lavender**, **Ember**, **Glacier**, **Moss**, **Espresso**, **Midnight**), every surface and text colour, corner roundness, typography, layout, your own toolbar buttons and sliders, styles for websites, and CSS for any part of Aphrodite. Everything stays on your computer and survives updates.
 
