@@ -17,7 +17,7 @@ No accounts. No telemetry. No ads. Just the web, quietly.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/newtab-dark.png">
-  <img src="assets/newtab-light.png" width="900" alt="Aphrodite's new tab page, with live clips on the board and in the sidebar">
+  <img src="assets/newtab-light.png" width="100%" alt="Aphrodite's new tab page, with live clips on the board and in the sidebar">
 </picture>
 
 </div>
@@ -29,19 +29,19 @@ No accounts. No telemetry. No ads. Just the web, quietly.
 <td width="33%" valign="top">
 
 ### 🛡️ Private by default
-Ads, trackers and cookie pop-ups are handled before a page even finishes loading. You don't have to set anything up.
+Ads, trackers and cookie pop-ups are handled before a page even finishes loading. Nothing to configure.
 
 </td>
 <td width="33%" valign="top">
 
 ### 🎭 Hard to fingerprint
-Every site sees its own made-up device, so sites can't follow you around the web. Sign-ups still work.
+Every site sees its own made-up device, so sites can't link your visits across the web. Sign-ins still work.
 
 </td>
 <td width="33%" valign="top">
 
-### ✨ Calm to use
-Warm, quiet design, vertical tabs and workspaces, and nothing that sends your data anywhere.
+### 🎨 Built to be yours
+Vertical tabs, workspaces with separate logins, live page clips, split view, reader view, and a live theme & CSS studio.
 
 </td>
 </tr>
@@ -49,96 +49,86 @@ Warm, quiet design, vertical tabs and workspaces, and nothing that sends your da
 
 ---
 
-## 🛡️ Security & privacy
+## 🛡️ Shields & Privacy Receipts
+
+Every site gets a **Shield panel** (left) with per-site switches and a **Privacy receipt** (right) naming every company that tried to follow you, what was blocked, and which device details received made-up answers.
 
 <table>
 <tr>
-<td width="50%" valign="top">
-<img src="assets/shield-panel.png" alt="The shield panel for a site">
+<td width="50%" valign="top" align="center">
+<img src="assets/shield-panel.png" width="100%" alt="The shield panel for a site"><br>
+<sub><b>Shield panel</b> — Per-site privacy grade (<b>S</b> to <b>F</b>), tracker counter, and individual protection switches</sub>
 </td>
-<td width="50%" valign="top">
-
-**Every site gets a shield panel.** It shows how heavily the site tracks you, what was blocked, and a switch for each protection on that site alone.
-
-- **Blocks ads and trackers**, including trackers disguised as the site's own address, and session-recording services.
-- **Refuses cookie pop-ups for you**, using each site's own menus.
-- **HTTPS-Only.** Every connection is encrypted, and you're warned before any site that can't be.
-- **Phishing and malware warnings** use lists kept on your computer. The pages you visit are never sent anywhere.
-- **Secure DNS, WebRTC leak protection, Global Privacy Control**, and removal of tracking tags from links.
-- **Bot checks work.** Sign-up and login checks (Arkose, DataDome, hCaptcha, reCAPTCHA, Cloudflare) work without lowering your protection. For a stubborn site, **Trust this site** fixes it, while other companies' trackers stay blocked.
-
+<td width="50%" valign="top" align="center">
+<img src="assets/privacy-receipt.png" width="100%" alt="A privacy receipt for a news site"><br>
+<sub><b>Privacy receipt</b> — Every company blocked, third-party cookies refused, and fingerprinting probes faked</sub>
 </td>
 </tr>
 </table>
 
-## 🧾 Privacy receipts
+- **Blocks ads, trackers, CNAME-cloaked trackers, and session replay scripts** automatically.
+- **Refuses cookie pop-ups for you** using each site's own menus, and lets you withdraw consent later without signing out.
+- **HTTPS-Only, Secure DNS, WebRTC leak protection, Global Privacy Control**, and automatic link-tracking removal.
+- **Phishing and malware warnings** run against lists stored on your computer — the addresses you visit are never sent anywhere.
+- **Bot checks work** (Cloudflare, hCaptcha, reCAPTCHA, Arkose, DataDome) without lowering your protection. For a stubborn site, **Trust this site** fixes it while keeping third-party trackers blocked.
+
+---
+
+## 🗂️ Workspaces, Tab Folders & `Ctrl+K` Command Palette
+
+Organize tabs by project or context without juggling separate browser profiles:
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-**See exactly what each site tried.** The receipt names every company that tried to follow you, what each tracker is for, and which device details the site asked for. It also shows which of those got made-up answers.
-
-- **A privacy grade** for every site, from **S** (tried nothing) down.
-- **"Who follows you"** shows the companies that turn up across the sites you visit.
-- **"What changed since your last visit"** flags new trackers, more data sharing, or an edited privacy policy.
-
+<td width="50%" valign="top" align="center">
+<img src="assets/workspaces.png" width="100%" alt="Workspaces menu, tab folders and sleeping tabs in the sidebar"><br>
+<sub><b>Workspaces, folders & sleeping tabs</b> — Each workspace can have its own <b>separate logins</b>, its own <b>protection level</b> (Strict, Balanced, Compatible), and its own <b>Studio theme</b></sub>
 </td>
-<td width="50%" valign="top">
-<img src="assets/privacy-receipt.png" alt="A privacy receipt for a news site">
+<td width="50%" valign="top" align="center">
+<img src="assets/command-palette.png" width="100%" alt="The Ctrl+K Command Palette"><br>
+<sub><b>Command palette (<code>Ctrl+K</code>)</b> — Jump to any open tab across workspaces, trigger split view or reader view, sleep background tabs, or run custom shortcuts</sub>
 </td>
 </tr>
 </table>
 
-## 🎭 Fingerprint protection
+---
 
-Sites can try to recognise your device from your graphics card, screen, fonts, audio and more. Aphrodite gives each site **its own made-up answers**:
+## 📖 Split View & Reader View
 
-| | |
-|---|---|
-| **Different on every site** | Sites can't link your visits to each other. |
-| **The same on one site** | A site you log in to sees a returning device, not a stranger every time. It lasts as long as you keep that site's cookies. |
-| **Everywhere a site can look** | The page, every frame inside it, popups, and every kind of background worker. |
-| **Undetectable** | The protection looks and behaves like the browser's own code, so sites can't tell it's there. |
-| **Private windows** | Get brand-new answers every time you open Aphrodite. |
+Open any two tabs side by side (`Ctrl+\` or drag a tab onto the page) and press `F9` on any article for a calm, distraction-free **Reader view**:
+
+<img src="assets/reader.png" width="100%" alt="Split view showing Reader view on the left beside reading notes on the right">
+
+---
 
 ## 📌 Live Clips
 
-<table>
-<tr>
-<td width="50%" valign="top">
+Right-click any price, score, status or chart on any webpage and choose **Clip this part of the page**. Clips stay live in your sidebar and on the new tab board with a sparkline history graph, checked quietly in the background (with your logins or anonymously) and optional desktop notifications when a value changes.
 
-**Keep any part of any page live.** Right-click a price, a score, a status or a chart and choose **Clip this part of the page**.
+<img src="assets/clips-board.png" width="100%" alt="Live clips on the new tab board with sparkline history graphs">
 
-- Clips sit in the **sidebar** and on the **new tab board**, with a **graph of how the value changed**.
-- Checked in the background with shields on, either **as you** (your logins) or **anonymously**.
-- An optional **Windows notification** when something changes.
-- If a site is redesigned, the clip tells you and lets you pick the part again.
+---
 
-</td>
-<td width="50%" valign="top">
-<img src="assets/clips-board.png" alt="Live clips on the new tab board">
-</td>
-</tr>
-</table>
+## 🎨 Studio: Make It Yours
 
-## 📖 Split view, Reader view & everyday browsing
+Open **Studio** from the sidebar to customize every part of Aphrodite in real time — everything stays on your computer, survives updates, and can be turned off instantly with `Ctrl+Shift+Alt+M`:
 
-<img src="assets/reader.png" alt="Split view showing Reader view beside reading notes, with tab folders and sleeping tabs in the sidebar">
+<img src="assets/studio.gif" width="100%" alt="Animated tour of Aphrodite Studio: cycling through built-in themes, surface colour pickers, corner roundness and font controls, custom toolbar sliders, and live interface CSS">
 
-**Split view** (`Ctrl+\`, or drag any tab onto the page), **Reader view** (`F9`), **vertical tabs**, **workspaces** (each with its own protection level, and its own logins if you want), **tab folders**, **sleeping tabs** that free memory automatically, a command palette (`Ctrl+K`), session restore, private windows and bookmark import from other browsers.
+- **13 built-in themes:** *Aphrodite*, *Sage*, *Harbor*, *Plum*, *Rosewater*, *Graphite*, *Typewriter*, *Lavender*, *Ember*, *Glacier*, *Moss*, *Espresso*, and *Midnight*.
+- **Every surface & text colour:** Customize window, page, panel, input, sidebar, and toolbar colours separately for light and dark mode, or share themes as a short `APH1.` code.
+- **Shape, typography & layout:** Adjust corner roundness (`0%–160%`), sidebar width, heading & interface fonts, tab height, tab title motion (*Typewriter*, *Pencil*, *Slide*), and new-tab wallpapers.
+- **Your own buttons, sliders & CSS:** Add custom buttons, live CSS variable sliders, and switches to the toolbar or sidebar; write custom CSS for any website; or inspect and restyle any of Aphrodite's 90+ named interface parts.
 
-## 🎨 Studio: make it yours
+---
 
-<img src="assets/studio.png" alt="Studio, Aphrodite's theme editor">
+## 🎭 Fingerprint Protection & Honest Privacy Guide
 
-13 built-in themes (**Aphrodite**, **Sage**, **Harbor**, **Plum**, **Rosewater**, **Graphite**, **Typewriter**, **Lavender**, **Ember**, **Glacier**, **Moss**, **Espresso**, **Midnight**), every surface and text colour, corner roundness, typography, layout, your own toolbar buttons and sliders, styles for websites, and CSS for any part of Aphrodite. Everything stays on your computer and survives updates.
+Sites try to recognize your device from your graphics card, canvas, audio, fonts, and hardware. Aphrodite gives every site **its own made-up device profile** — different on every site so visits can't be linked, consistent on a single site so logins stay signed in, and brand-new in every Private window.
 
-## 📚 A privacy guide that tells the truth
+<img src="assets/privacy-guide.png" width="100%" alt="The privacy guide in Settings">
 
-<img src="assets/privacy-guide.png" alt="The privacy guide in Settings">
-
-Settings → **Privacy guide** explains, in plain words, what Aphrodite hides, what it **can't** hide, where each protection reaches and when it doesn't apply.
+Settings → **Privacy guide** explains in plain words what Aphrodite hides, what **no browser** can hide on its own, where each protection reaches, and when it doesn't apply.
 
 ---
 
