@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.2 (2026-11-05)
+- **Aphrodite for Linux.** Official Linux packages (`.AppImage` and `.deb`) now ship alongside Windows on the releases page, with automatic updates for AppImage installs, Linux font fallbacks in Studio, and platform-matched labels.
+
 ## 2.0.1 (2026-11-05)
 - **What’s new shows the test versions too.** Settings → About now lists the versions from before the public release under their own **Pre-release** heading, below the released ones.
 - A refreshed download page with screenshots of each feature.

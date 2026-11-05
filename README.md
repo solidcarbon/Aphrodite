@@ -4,10 +4,12 @@
 
 # Aphrodite
 
-**A calm, private browser for Windows.**<br>
+**A calm, private browser for Windows and Linux.**<br>
 No accounts. No telemetry. No ads. Just the web, quietly.
 
 <a href="https://github.com/solidcarbon/Aphrodite/releases/latest"><img src="https://img.shields.io/badge/Download_for_Windows-c6613f?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows"></a>
+&nbsp;
+<a href="https://github.com/solidcarbon/Aphrodite/releases/latest"><img src="https://img.shields.io/badge/Download_for_Linux-c6613f?style=for-the-badge&logo=linux&logoColor=white" alt="Download for Linux"></a>
 &nbsp;
 <a href="https://github.com/solidcarbon/Aphrodite/releases/latest"><img src="https://img.shields.io/github/v/release/solidcarbon/Aphrodite?style=for-the-badge&label=latest&color=2f2a26" alt="Latest version"></a>
 
