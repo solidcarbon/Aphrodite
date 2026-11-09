@@ -166,6 +166,13 @@ No. Aphrodite is free to use, but it's proprietary software. The open-source par
 
 ---
 
+## ⚠️ Important notice
+
+> **Brand-new accounts risk false-positive bot suspensions:**
+> Newly made accounts on websites like GitHub or Reddit might be suspended upon posting. This is a known issue I am actively working to resolve. Accounts with existing history and reputation work properly; however, newly made accounts—especially when using Aphrodite—carry a risk of being suspended by automated filters mistaking the browser for a bot. If you don't want to waste time with support teams, please be careful about this. If this ever happens to you, please notify me at **simplecarbon@proton.me** (or open an issue) so I can investigate and fix it.
+
+---
+
 ## About this project
 
 Aphrodite isn't backed by a huge company, a big engineering team, or someone who is extremely experienced in coding. It's a personal project by a solo builder, and I don't come from a traditional coding background. I started building Aphrodite because I was bored and wanted a private, custom browser that felt like mine and gave me the security and privacy I wanted—and modern AI tools finally made it possible to bring that vision to life. Therefore, if you don't trust or support AI tools' capabilities and safety measures, I would not recommend downloading this browser, as most of it was built using them (thanks to all the agents that worked on this project).
