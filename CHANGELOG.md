@@ -1,5 +1,39 @@
 # Changelog
 
+## 2.3.5 (2026-11-09)
+- **First-party operational routing and anti-bot hardening.** Allowed first-party APIs, CSRF tokens, and load-balancer endpoints by default across all websites so post submissions work without needing "Trust this site", and removed all detectable global markers from window and globalThis.
+
+## 2.3.4 (2026-11-09)
+- **Dependency cleanup and audit hardening.** Removed unused `adm-zip` dependency and updated third-party notices to eliminate audit vulnerability warnings.
+
+## 2.3.3 (2026-11-09)
+- **Inline new-tab button with FLIP animation.** Added an inline button beneath the tabs in the sidebar with a centered plus icon, hover animation, and a smooth slide-down transition when tabs are added.
+- **Theme-matched Windows shortcut icons.** Pinned taskbar, desktop, and Start menu shortcuts now automatically sync with the active theme, displaying the custom theme icon even when the browser is closed.
+
+## 2.3.2 (2026-11-08)
+- **Fixed search bar text shifting up on scroll in Settings and Studio.** Pinned side-menu offsets now preserve subpixel precision instead of rounding to integers, and the search input uses fixed flex sizing and zero vertical padding so its text never snaps 1px upward when scrolling begins.
+
+## 2.3.1 (2026-11-08)
+- **Fixed side menu shifting slightly on scroll in Settings and Studio.** The section menu next to Settings and Studio now measures its pinned top offset after applying the sticky title padding and font metrics, so it stays in place when you start or finish scrolling.
+
+## 2.3.0 (2026-11-06)
+- **Pinned tab audio controls and quick close.** Pinned tabs in the sidebar grid now show a live speaker or muted badge you can click directly to mute or unmute without unpinning, and **Shift + Middle-click** closes a pinned tab in place.
+- **Drag-and-drop reordering for pinned tabs and tab folders.** Pinned tiles can now be dragged to reorder or dropped onto the split-view zone, and dragging a folder header moves the folder and all of its tabs together.
+- **In-place bookmark editing and New Tab shortcut reordering.** Right-click any shortcut on the New Tab page or any bookmark in the Library to open it in a new tab or split view, edit its name and address, copy its address, or remove it, and drag shortcuts on the New Tab page to arrange them in any order.
+- **Clearer connection and error pages with automatic reconnect.** Unreachable pages now explain the specific cause in plain English (offline, network change, DNS lookup failure, timeout, refused or reset connection, redirect loop with one-click site cookie clearing, empty response, or TLS/certificate error) with tailored recovery actions, and automatically reload the tab as soon as your connection returns.
+
+## 2.2.2 (2026-11-06)
+- **Fixed a startup crash after updating when separate-login workspaces are configured.** Opening the welcome card at startup before Shields finished initializing could mistake the welcome window for a site popup and crash while enumerating workspace sessions.
+
+## 2.2.1 (2026-11-06)
+- **Consistent UI scaling and scrollable popovers on scaled displays.** Aphrodite now keeps its interface at 1080p proportions when Windows display scaling (125%, 150%, 175%) shrinks the available screen height, and constrains the Shields panel and toolbar menus to the window height with a pinned bottom bar so **Receipt** and footer buttons are never cut off on smaller or scaled screens.
+
+## 2.2.0 (2026-11-06)
+- **Tab opening and closing animations.** New tabs and closed tabs now animate in the sidebar, with five opening styles (**Ink stamp**, **Scroll unroll**, **Silk ribbon**, **3D unfold** and **Petal bloom**) and five closing styles (**Strikethrough**, **Blurry glitch**, **Paper split**, **3D flip** and **Wind-up flick**) in **Studio → Layout**, alongside **Off**.
+
+## 2.1.0 (2026-11-06)
+- **A hand-written welcome.** On first launch and after each update, Aphrodite opens with a small card: the Petal A mark is drawn in, then "Aphrodite" is written stroke by stroke, underlined, and signed with a petal. Click or press Esc to skip it. You can watch it again from Settings → About or the command palette (**Replay welcome animation**).
+
 ## 2.0.3 (2026-11-05)
 - **Theme-matched window and taskbar icon.** When you switch themes or customize colours in Studio, Aphrodite's window and taskbar icon now updates automatically to match your active window background and accent colours.
 
