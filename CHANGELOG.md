@@ -1,5 +1,42 @@
 # Changelog
 
+## 2.7.0 (2026-11-10)
+- **Delete a site's data from the lock.** The lock button's panel now has **Delete all data**: it removes that site's cookies, sign-ins and stored data and reloads the page. It asks once more on the button itself, so a stray click can't sign you out.
+- **Aphrodite's own drop-downs in the Shields panel.** Bot checks, Cookie pop-ups and Time zone now open the same rounded lists as the rest of the browser, instead of the system's.
+- **Workspace dots have their own row.** They now sit above the protection card, and a long row scrolls sideways. The buttons at the bottom of the sidebar stay put: Private window and Limiters on the left, Studio and Settings on the right.
+
+## 2.6.0 (2026-11-10)
+- **Pause and resume downloads.** A download's notification and the Downloads page now have **Pause** and **Resume** next to Cancel, and show the speed and the time left. A download that was interrupted can be picked up again.
+- **Verify a download.** On a finished download, **Verify** compares the file with the SHA-256 checksum its publisher lists and tells you whether it is exactly the file they made. It is worked out on your computer; nothing is sent.
+- **Ask where to save.** A new switch in Settings asks for a folder and name before each download. **Save link as…**, **Save image as…** and **Save page as…** in the right-click menu now always ask.
+- **Export bookmarks.** Settings → Your data saves all your bookmarks as an HTML file that any browser can import.
+- **Full screen.** **F11** fills the screen with the page and hides the sidebar and toolbar. Press it again to come back.
+- **Downloads in the sidebar.** The Downloads entry shows a ring that fills while files download, how far along they are, and a dot when one has finished and you haven't looked yet.
+- **Livelier notifications.** Notifications now slide away when they close and shuffle smoothly into place, and a download's icon changes as it finishes. A download notification you close stays closed until the file is done.
+- **Privacy guide, brought up to date.** New parts cover downloads and files, protections around the page (permissions, devices, link pings, separate logins), and what Aphrodite itself sends and to whom.
+
+## 2.5.2 (2026-11-10)
+- **Build housekeeping.** A small fix to how Aphrodite is packaged. Nothing changes in how it looks or works.
+
+## 2.5.1 (2026-11-10)
+- **Theme icon on your shortcuts, fixed.** The taskbar, desktop and Start menu icons now really follow your theme while Aphrodite is closed. Windows was holding on to the old picture.
+- **Tidier sidebar footer.** The Limiters button now sits next to Private window, so the workspace dots are centred between two buttons on each side.
+
+## 2.5.0 (2026-11-10)
+- **Page previews in the PDF viewer.** A strip down the right side shows every page. Click one to jump to it; the button on the bar hides the strip, and your choice is remembered.
+- **Open your own PDFs.** Aphrodite now appears under **Open with** for PDF files on Windows and Linux (it never makes itself the default), and you can drop a PDF onto the window.
+- **Taskbar and dock actions.** Right-click Aphrodite's icon for **New tab**, **New window** and **New private window**.
+- **Limits for one tab.** Right-click a tab → **Limit this tab** to give it its own speed, its own network cap, and a memory size past which it goes to sleep. A lightning mark shows which tabs are limited.
+- **Download speed in Limiters.** The popup now shows how fast this window's tabs are downloading, in total and per tab. It is only measured while the popup is open.
+
+## 2.4.0 (2026-11-10)
+- **PDF viewer.** PDFs now open inside their tab instead of showing an empty page, in Aphrodite's own viewer: turn pages, zoom, fit to width, search every page, rotate, select and copy text, and download. It takes the colours of your theme, and **dark pages** (on with a dark theme, or from the moon button) redraws the document light on dark while pictures keep their own colours. The viewer page can't reach the network and never runs scripts inside a PDF. Back returns to the page you came from, and **⋯ → Open a PDF from this computer** opens a local file.
+- **Limiters.** A new gauge button at the bottom of the sidebar shows how much memory and processor Aphrodite is using and lets you cap it with sliders: a memory limit that puts tabs you aren't looking at to sleep (with an optional hard limit), a slower speed for background tabs, and a network speed cap. It also lists the heaviest tabs, with buttons to sleep or close them.
+
+## 2.3.6 (2026-11-10)
+- **Fingerprint protection restored.** In 2.3.5 the fingerprint defences did not switch on, so sites could read real device details. They are back on in every page, frame and worker, and still leave nothing on the page that a site could use to spot Aphrodite.
+- **Tracker blocking restored for a site's own trackers.** 2.3.5 let every request to a site's own domain through. A site's own analytics and disguised (CNAME) trackers are blocked again unless you choose "Trust this site".
+
 ## 2.3.5 (2026-11-09)
 - **First-party operational routing and anti-bot hardening.** Allowed first-party APIs, CSRF tokens, and load-balancer endpoints by default across all websites so post submissions work without needing "Trust this site", and removed all detectable global markers from window and globalThis.
 
