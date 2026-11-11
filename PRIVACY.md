@@ -34,8 +34,11 @@ To work, Aphrodite connects to the services below. None of them receive your bro
 | Your chosen secure-DNS provider (Quad9, Cloudflare or Mullvad) | Looking up website addresses privately | Only if you turn on secure DNS |
 | Cloudflare (cloudflare.com/cdn-cgi/trace) and ipinfo.io | Showing what websites see about your connection, and matching the time zone to your VPN | Only when you open that panel or turn on the VPN time-zone setting |
 | Your search engine (DuckDuckGo by default) | Search suggestions and results | When you type in the address bar or search |
+| GitHub (github.com and its download servers) | Downloading the assistant's model from the public SolidCarbon Works releases page, with no account or key | Only when you turn on the assistant and choose Download |
 
 Lists of dangerous sites are downloaded to your device and checked there. The addresses you visit are **not** sent to anyone for checking.
+
+The assistant, if you turn it on, runs entirely on your device. What you ask it and the pages it reads are **not** sent anywhere, and its engine has no network access. Chats are kept in memory only and are gone when you start a new chat or close the window.
 
 ## Fingerprint protection
 

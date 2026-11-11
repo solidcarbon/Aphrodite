@@ -2,7 +2,7 @@
 
 Aphrodite is proprietary software by SolidCarbon Works, and it's built with the open-source components below. Each component is licensed under its own terms, not under the Aphrodite EULA. Full licence texts are in the `licenses/` folder next to this file.
 
-Generated 2026-11-11 for Aphrodite 2.9.0. Regenerate it whenever dependencies change.
+Generated 2026-11-11 for Aphrodite 2.10.0. Regenerate it whenever dependencies change.
 
 ## Chromium and Electron
 
@@ -96,6 +96,123 @@ The Converter and the PDF editor are built with the packages below, and the pack
 
 The Converter also uses **PDF.js** and **DOMPurify**, listed above.
 
+## Assistant engine
+
+The optional assistant runs on **llama.cpp** (MIT licence, © The ggml authors, https://github.com/ggml-org/llama.cpp), through **node-llama-cpp** (MIT licence, © Gilad S., https://github.com/withcatai/node-llama-cpp). The ready-built llama.cpp libraries ship inside the `@node-llama-cpp` packages for this system (the processor build and the Vulkan build). Aphrodite uses all of these **unmodified**.
+
+They are built with the packages below. Each one's own licence file is in its folder inside the Aphrodite install folder. The Blue Oak Model License text is in `licenses/BlueOak-1.0.0.txt`.
+
+| Package | Version | Licence | Source |
+|---|---|---|---|
+| @huggingface/jinja | 0.5.11 | MIT | https://github.com/huggingface/huggingface.js |
+| @isaacs/fs-minipass | 4.0.1 | ISC | https://github.com/npm/fs-minipass |
+| @kwsites/file-exists | 1.1.1 | MIT | https://github.com/kwsites/file-exists |
+| @kwsites/promise-deferred | 1.1.1 | MIT | https://github.com/kwsites/promise-deferred |
+| @node-llama-cpp/win-x64 | 3.22.2 | MIT | https://github.com/withcatai/node-llama-cpp |
+| @node-llama-cpp/win-x64-vulkan | 3.22.2 | MIT | https://github.com/withcatai/node-llama-cpp |
+| @reflink/reflink | 0.1.19 | MIT | https://github.com/pnpm/reflink |
+| @reflink/reflink-win32-x64-msvc | 0.1.19 | MIT | https://github.com/pnpm/reflink |
+| @simple-git/args-pathspec | 1.0.4 | MIT | https://github.com/steveukx/git-js |
+| @simple-git/argv-parser | 1.1.1 | MIT | https://github.com/steveukx/git-js |
+| @tinyhttp/content-disposition | 2.2.4 | MIT | https://github.com/tinyhttp/tinyhttp |
+| ansi-escapes | 6.2.1 | MIT | https://github.com/sindresorhus/ansi-escapes |
+| ansi-regex | 5.0.1 | MIT | https://github.com/chalk/ansi-regex |
+| ansi-styles | 4.3.0 | MIT | https://github.com/chalk/ansi-styles |
+| ansi-styles | 6.2.3 | MIT | https://github.com/chalk/ansi-styles |
+| async-retry | 1.3.3 | MIT | https://github.com/vercel/async-retry |
+| bytes | 3.1.2 | MIT | https://github.com/visionmedia/bytes.js |
+| chalk | 5.6.2 | MIT | https://github.com/chalk/chalk |
+| chmodrp | 1.0.2 | MIT | https://github.com/leonzalion/chmodrp |
+| chownr | 3.0.0 | BlueOak-1.0.0 | https://github.com/isaacs/chownr |
+| ci-info | 4.4.0 | MIT | https://github.com/watson/ci-info |
+| cli-cursor | 5.0.0 | MIT | https://github.com/sindresorhus/cli-cursor |
+| cli-spinners | 2.9.2 | MIT | https://github.com/sindresorhus/cli-spinners |
+| cli-spinners | 3.4.0 | MIT | https://github.com/sindresorhus/cli-spinners |
+| cliui | 8.0.1 | ISC | https://github.com/yargs/cliui |
+| cmake-js | 8.0.0 | MIT | https://github.com/cmake-js/cmake-js |
+| color-convert | 2.0.1 | MIT | https://github.com/Qix-/color-convert |
+| color-name | 1.1.4 | MIT | https://github.com/colorjs/color-name |
+| commander | 10.0.1 | MIT | https://github.com/tj/commander.js |
+| cross-spawn | 7.0.6 | MIT | https://github.com/moxystudio/node-cross-spawn |
+| debug | 4.4.3 | MIT | https://github.com/debug-js/debug |
+| deep-extend | 0.6.0 | MIT | https://github.com/unclechu/node-deep-extend |
+| emoji-regex | 8.0.0 | MIT | https://github.com/mathiasbynens/emoji-regex |
+| env-var | 7.5.0 | MIT | https://github.com/evanshortiss/env-var |
+| escalade | 3.2.0 | MIT | https://github.com/lukeed/escalade |
+| eventemitter3 | 5.0.4 | MIT | https://github.com/primus/eventemitter3 |
+| filename-reserved-regex | 3.0.0 | MIT | https://github.com/sindresorhus/filename-reserved-regex |
+| filenamify | 6.0.0 | MIT | https://github.com/sindresorhus/filenamify |
+| fs-extra | 11.4.1 | MIT | https://github.com/jprichardson/node-fs-extra |
+| get-caller-file | 2.0.5 | ISC | https://github.com/stefanpenner/get-caller-file |
+| get-east-asian-width | 1.7.0 | MIT | https://github.com/sindresorhus/get-east-asian-width |
+| graceful-fs | 4.2.11 | ISC | https://github.com/isaacs/node-graceful-fs |
+| ignore | 7.0.14 | MIT | https://github.com/kaelzhang/node-ignore |
+| ini | 1.3.8 | ISC | https://github.com/isaacs/ini |
+| ipull | 3.9.5 | MIT | https://github.com/ido-pluto/ipull |
+| is-fullwidth-code-point | 3.0.0 | MIT | https://github.com/sindresorhus/is-fullwidth-code-point |
+| is-fullwidth-code-point | 5.1.0 | MIT | https://github.com/sindresorhus/is-fullwidth-code-point |
+| is-interactive | 2.0.0 | MIT | https://github.com/sindresorhus/is-interactive |
+| is-unicode-supported | 2.1.0 | MIT | https://github.com/sindresorhus/is-unicode-supported |
+| isexe | 3.1.5 | BlueOak-1.0.0 | https://github.com/isaacs/isexe |
+| jsonfile | 6.2.1 | MIT | https://github.com/jprichardson/node-jsonfile |
+| lifecycle-utils | 2.1.0 | MIT | https://github.com/giladgd/lifecycle-utils |
+| lifecycle-utils | 4.5.2 | MIT | https://github.com/giladgd/lifecycle-utils |
+| lodash.debounce | 4.0.8 | MIT | https://github.com/lodash/lodash |
+| log-symbols | 7.0.1 | MIT | https://github.com/sindresorhus/log-symbols |
+| lowdb | 7.0.1 | MIT | https://github.com/typicode/lowdb |
+| mimic-function | 5.0.1 | MIT | https://github.com/sindresorhus/mimic-function |
+| minimist | 1.2.8 | MIT | https://github.com/minimistjs/minimist |
+| minipass | 7.1.3 | BlueOak-1.0.0 | https://github.com/isaacs/minipass |
+| minizlib | 3.1.0 | MIT | https://github.com/isaacs/minizlib |
+| ms | 2.1.3 | MIT | https://github.com/vercel/ms |
+| nanoid | 5.1.16 | MIT | https://github.com/ai/nanoid |
+| node-addon-api | 8.9.2 | MIT | https://github.com/nodejs/node-addon-api |
+| node-api-headers | 1.9.0 | MIT | https://github.com/nodejs/node-api-headers |
+| node-llama-cpp | 3.22.2 | MIT | https://github.com/withcatai/node-llama-cpp |
+| onetime | 7.0.0 | MIT | https://github.com/sindresorhus/onetime |
+| ora | 9.4.1 | MIT | https://github.com/sindresorhus/ora |
+| parse-ms | 4.0.0 | MIT | https://github.com/sindresorhus/parse-ms |
+| path-key | 3.1.1 | MIT | https://github.com/sindresorhus/path-key |
+| pretty-bytes | 6.1.1 | MIT | https://github.com/sindresorhus/pretty-bytes |
+| pretty-ms | 8.0.0 | MIT | https://github.com/sindresorhus/pretty-ms |
+| pretty-ms | 9.3.1 | MIT | https://github.com/sindresorhus/pretty-ms |
+| proper-lockfile | 4.1.2 | MIT | https://github.com/moxystudio/node-proper-lockfile |
+| rc | 1.2.8 | (BSD-2-Clause OR MIT OR Apache-2.0) | https://github.com/dominictarr/rc |
+| require-directory | 2.1.1 | MIT | https://github.com/troygoode/node-require-directory |
+| restore-cursor | 5.1.0 | MIT | https://github.com/sindresorhus/restore-cursor |
+| retry | 0.12.0 | MIT | https://github.com/tim-kos/node-retry |
+| retry | 0.13.1 | MIT | https://github.com/tim-kos/node-retry |
+| semver | 7.8.6 | ISC | https://github.com/npm/node-semver |
+| shebang-command | 2.0.0 | MIT | https://github.com/kevva/shebang-command |
+| shebang-regex | 3.0.0 | MIT | https://github.com/sindresorhus/shebang-regex |
+| signal-exit | 3.0.7 | ISC | https://github.com/tapjs/signal-exit |
+| signal-exit | 4.1.0 | ISC | https://github.com/tapjs/signal-exit |
+| simple-git | 3.36.0 | MIT | https://github.com/steveukx/git-js |
+| sleep-promise | 9.1.0 | MIT | https://github.com/brummelte/sleep-promise |
+| slice-ansi | 7.1.2 | MIT | https://github.com/chalk/slice-ansi |
+| slice-ansi | 8.0.0 | MIT | https://github.com/chalk/slice-ansi |
+| stdin-discarder | 0.3.2 | MIT | https://github.com/sindresorhus/stdin-discarder |
+| stdout-update | 4.0.1 | MIT | https://github.com/keindev/stdout-update |
+| steno | 4.0.2 | MIT | https://github.com/typicode/steno |
+| string-width | 4.2.3 | MIT | https://github.com/sindresorhus/string-width |
+| string-width | 7.2.0 | MIT | https://github.com/sindresorhus/string-width |
+| string-width | 8.3.0 | MIT | https://github.com/sindresorhus/string-width |
+| strip-ansi | 6.0.1 | MIT | https://github.com/chalk/strip-ansi |
+| strip-ansi | 7.2.0 | MIT | https://github.com/chalk/strip-ansi |
+| strip-json-comments | 2.0.1 | MIT | https://github.com/sindresorhus/strip-json-comments |
+| tar | 7.5.22 | BlueOak-1.0.0 | https://github.com/isaacs/node-tar |
+| universalify | 2.0.1 | MIT | https://github.com/RyanZim/universalify |
+| url-join | 4.0.1 | MIT | https://github.com/jfromaniello/url-join |
+| validate-npm-package-name | 7.0.2 | ISC | https://github.com/npm/validate-npm-package-name |
+| which | 2.0.2 | ISC | https://github.com/isaacs/node-which |
+| which | 6.0.1 | ISC | https://github.com/npm/node-which |
+| wrap-ansi | 7.0.0 | MIT | https://github.com/chalk/wrap-ansi |
+| y18n | 5.0.8 | ISC | https://github.com/yargs/y18n |
+| yallist | 5.0.0 | BlueOak-1.0.0 | https://github.com/isaacs/yallist |
+| yargs | 17.7.3 | MIT | https://github.com/yargs/yargs |
+| yargs-parser | 21.1.1 | ISC | https://github.com/yargs/yargs-parser |
+| yoctocolors | 2.2.0 | MIT | https://github.com/sindresorhus/yoctocolors |
+
 ## Font
 
 **Source Serif 4** (© Adobe), packaged by Fontsource (`@fontsource-variable/source-serif-4` 5.3.0). It's licensed under the **SIL Open Font License 1.1** (`licenses/OFL-1.1.txt`). It's bundled with Aphrodite and isn't sold on its own.
@@ -126,6 +243,12 @@ Each of these packages is © its authors, and its licence text is included in th
 | tldts-core | 7.4.20 | MIT | https://github.com/remusao/tldts |
 | tldts-experimental | 7.4.19 | MIT | https://github.com/remusao/tldts |
 | universalify | 2.0.1 | MIT | https://github.com/RyanZim/universalify |
+
+## The assistant's model (downloaded only when you ask for it)
+
+The assistant's model isn't part of the installer. If you turn the assistant on and choose Download, Aphrodite fetches it from the Aphrodite releases page:
+
+- **Qwen3.5-4B** (© Alibaba Cloud; **Apache License 2.0**, `licenses/Apache-2.0.txt`). Source: https://huggingface.co/Qwen/Qwen3.5-4B. Changes from the original: the weights were converted to the GGUF file format and reduced to 4-bit precision (Q4_K_M) by bartowski (https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF), and the file is split into parts for download and joined again on your computer. Nothing else was changed. Alibaba Cloud and the Qwen team don't endorse Aphrodite.
 
 ## Data downloaded while Aphrodite runs (not distributed with Aphrodite)
 

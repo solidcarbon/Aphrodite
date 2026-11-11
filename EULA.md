@@ -38,11 +38,13 @@ Nothing in this agreement limits the rights those licences give you. In particul
 - Where a component is under the **GNU Lesser General Public License** (for example the FFmpeg library inside Chromium), you may modify that component for your own use and reverse engineer Aphrodite as far as is needed to debug those modifications.
 - Where a component is under the **Mozilla Public License 2.0**, you can get its source code at the address given in `THIRD-PARTY-NOTICES`.
 
-## 5. Websites, filter lists and your files
+## 5. Websites, filter lists, your files and the assistant
 
 Aphrodite is a browser. The websites you visit and the filter lists Aphrodite downloads all belong to third parties. Their own terms apply to them, and we're not responsible for them. Blocking ads, trackers, consent pop-ups or dangerous sites is done on a best-effort basis: it will miss some things and may sometimes break a site.
 
 Files you open, edit or convert with Aphrodite stay yours, and so does what you make from them. You're responsible for having the right to use, change and convert them. Converting, reducing, cleaning hidden details and redacting are done carefully but can't be perfect for every file: a conversion can lose formatting, and a file can carry information in places these tools don't reach. Check a result before you rely on it or share it, especially a redacted or cleaned one.
+
+The assistant is an optional feature that runs an AI language model on your own computer. The model is made by a third party and is provided under its own open-source licence (see section 4). What it writes is produced automatically: it can be wrong, incomplete, out of date or made up, even when it sounds certain, and it may misread a page. Its answers are not medical, legal, financial, safety or other professional advice, and they are not statements by us. You decide whether to rely on an answer, and you do so at your own risk: check anything that matters against a source you trust.
 
 ## 6. Trademarks
 
