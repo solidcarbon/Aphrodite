@@ -1,6 +1,6 @@
 # Aphrodite End-User Licence Agreement
 
-**Version 1.0 · Effective 5 November 2026**
+**Version 1.1 · Effective 11 November 2026**
 
 This agreement is between you and **SolidCarbon Works** ("we", "us"). It covers the Aphrodite browser, its installer, its updates and its documentation (together, "Aphrodite"). By installing or using Aphrodite you accept this agreement. If you don't accept it, don't install or use Aphrodite.
 
@@ -38,9 +38,11 @@ Nothing in this agreement limits the rights those licences give you. In particul
 - Where a component is under the **GNU Lesser General Public License** (for example the FFmpeg library inside Chromium), you may modify that component for your own use and reverse engineer Aphrodite as far as is needed to debug those modifications.
 - Where a component is under the **Mozilla Public License 2.0**, you can get its source code at the address given in `THIRD-PARTY-NOTICES`.
 
-## 5. Websites and filter lists
+## 5. Websites, filter lists and your files
 
 Aphrodite is a browser. The websites you visit and the filter lists Aphrodite downloads all belong to third parties. Their own terms apply to them, and we're not responsible for them. Blocking ads, trackers, consent pop-ups or dangerous sites is done on a best-effort basis: it will miss some things and may sometimes break a site.
+
+Files you open, edit or convert with Aphrodite stay yours, and so does what you make from them. You're responsible for having the right to use, change and convert them. Converting, reducing, cleaning hidden details and redacting are done carefully but can't be perfect for every file: a conversion can lose formatting, and a file can carry information in places these tools don't reach. Check a result before you rely on it or share it, especially a redacted or cleaned one.
 
 ## 6. Trademarks
 

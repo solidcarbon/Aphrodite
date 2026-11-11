@@ -2,7 +2,7 @@
 
 Aphrodite is proprietary software by SolidCarbon Works, and it's built with the open-source components below. Each component is licensed under its own terms, not under the Aphrodite EULA. Full licence texts are in the `licenses/` folder next to this file.
 
-Generated 2026-11-05 for Aphrodite 2.0.0. Regenerate it whenever dependencies change.
+Generated 2026-11-11 for Aphrodite 2.9.0. Regenerate it whenever dependencies change.
 
 ## Chromium and Electron
 
@@ -37,8 +37,64 @@ The following are covered by the **MPL-2.0** (`licenses/MPL-2.0.txt`). Aphrodite
 |---|---|---|
 | @mozilla/readability (© Arc90 Inc., Mozilla) | 0.6.0 | https://github.com/mozilla/readability |
 | dompurify (© Cure53 and contributors) | 3.4.17 | https://github.com/cure53/DOMPurify |
+| pdfjs-dist (PDF.js, © Mozilla Foundation), used by the PDF viewer | 6.4.299 | https://github.com/mozilla/pdf.js |
 
 Licence text: `licenses/Apache-2.0.txt` (full text: https://www.apache.org/licenses/LICENSE-2.0).
+
+## PDF viewer components
+
+The PDF viewer uses **PDF.js** (Apache-2.0, listed above), unmodified. These parts come with it, each under its own licence. Their licence texts are in the installed app, next to the files (`resources/app.asar/build/pdf/`):
+
+| Component | Licence | Licence file |
+|---|---|---|
+| Standard PDF fonts (Foxit; © PDFium Authors) | BSD-3-Clause | `standard_fonts/LICENSE_FOXIT` |
+| Character maps (© Adobe Systems) | BSD-3-Clause | `cmaps/LICENSE` |
+| OpenJPEG image decoder | BSD-2-Clause | `wasm/LICENSE_OPENJPEG`, `wasm/LICENSE_PDFJS_OPENJPEG` |
+| JBIG2 image decoder (© PDFium Authors, Mozilla) | BSD-3-Clause and Apache-2.0 | `wasm/LICENSE_JBIG2`, `wasm/LICENSE_PDFJS_JBIG2` |
+| qcms colour management (© Mozilla, Marti Maria) | MIT | `wasm/LICENSE_QCMS`, `wasm/LICENSE_PDFJS_QCMS` |
+
+PDF.js's Liberation Sans fonts and its script sandbox are not included.
+
+## Converter and PDF editor components
+
+The Converter and the PDF editor are built with the packages below, and the packages those are built on. They are bundled into the app (`resources/app.asar/build/tools/libs.mjs` and `resources/app.asar/build/pdf/pdf-lib.min.mjs`), unmodified. Each is © its authors. Their licence texts are in the installed app at `resources/app.asar/build/tools/licenses/<package>.txt`, and the notices their authors ask to keep are in `resources/app.asar/build/tools/libs.mjs.LEGAL.txt`.
+
+| Package | Version | Licence | Source |
+|---|---|---|---|
+| @cantoo/pdf-lib (changes to PDF files: pages, text, redaction, hidden details) | 2.11.1 | MIT | https://github.com/cantoo-scribe/pdf-lib |
+| @xmldom/xmldom | 0.8.15 | MIT | https://github.com/xmldom/xmldom |
+| argparse | 1.0.10 | MIT | https://github.com/nodeca/argparse |
+| base64-js | 1.5.1 | MIT | https://github.com/beatgammit/base64-js |
+| core-util-is | 1.0.3 | MIT | https://github.com/isaacs/core-util-is |
+| culori | 4.0.2 | MIT | https://github.com/Evercoder/culori |
+| dingbat-to-unicode | 1.0.2 | BSD-2-Clause | https://github.com/mwilliamson/dingbat-to-unicode |
+| duck | 0.1.12 | BSD-2-Clause | https://github.com/mwilliamson/duck.js |
+| fflate (zip files) | 0.8.3 | MIT | https://github.com/101arrowz/fflate |
+| html-entities | 2.6.0 | MIT | https://github.com/mdevils/html-entities |
+| immediate | 3.0.6 | MIT | https://github.com/calvinmetcalf/immediate |
+| inherits | 2.0.4 | ISC | https://github.com/isaacs/inherits |
+| isarray | 1.0.0 | MIT | https://github.com/juliangruber/isarray |
+| jszip (MIT or GPL-3.0-or-later; used under MIT) | 3.10.2 | MIT | https://github.com/Stuk/jszip |
+| lie | 3.3.0 | MIT | https://github.com/calvinmetcalf/lie |
+| lop | 0.4.2 | BSD-2-Clause | https://github.com/mwilliamson/lop |
+| mammoth (Word documents to HTML) | 1.13.0 | BSD-2-Clause | https://github.com/mwilliamson/mammoth.js |
+| marked (Markdown to HTML) | 18.1.2 | MIT | https://github.com/markedjs/marked |
+| node-html-better-parser | 1.5.9 | MIT | https://github.com/Sharcoux/node-html-parser |
+| option | 0.2.4 | BSD-2-Clause | https://github.com/mwilliamson/node-options |
+| pako | 1.0.11 | MIT and Zlib | https://github.com/nodeca/pako |
+| process-nextick-args | 2.0.1 | MIT | https://github.com/calvinmetcalf/process-nextick-args |
+| readable-stream | 2.3.8 | MIT | https://github.com/nodejs/readable-stream |
+| safe-buffer | 5.1.2 | MIT | https://github.com/feross/safe-buffer |
+| setimmediate | 1.0.5 | MIT | https://github.com/YuzuJS/setImmediate |
+| sprintf-js | 1.1.3 | BSD-3-Clause | https://github.com/alexei/sprintf.js |
+| string_decoder | 1.1.1 | MIT | https://github.com/nodejs/string_decoder |
+| tslib | 2.9.1 | 0BSD | https://github.com/Microsoft/tslib |
+| turndown (HTML to Markdown) | 7.2.4 | MIT | https://github.com/mixmark-io/turndown |
+| underscore | 1.13.8 | MIT | https://github.com/jashkenas/underscore |
+| util-deprecate | 1.0.2 | MIT | https://github.com/TooTallNate/util-deprecate |
+| xmlbuilder | 10.1.1 | MIT | https://github.com/oozcitak/xmlbuilder-js |
+
+The Converter also uses **PDF.js** and **DOMPurify**, listed above.
 
 ## Font
 
@@ -51,7 +107,6 @@ Each of these packages is © its authors, and its licence text is included in th
 | Package | Version | Licence | Source |
 |---|---|---|---|
 | @types/trusted-types | 2.0.7 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped |
-| adm-zip | 0.5.18 | MIT | https://github.com/cthackers/adm-zip |
 | argparse | 2.0.1 | Python-2.0 | https://github.com/nodeca/argparse |
 | builder-util-runtime | 9.7.0 | MIT | https://github.com/electron-userland/electron-builder |
 | debug | 4.4.3 | MIT | https://github.com/debug-js/debug |

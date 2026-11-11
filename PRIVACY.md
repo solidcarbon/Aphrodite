@@ -1,6 +1,6 @@
 # Aphrodite privacy policy
 
-**Effective 5 November 2026**
+**Effective 11 November 2026**
 
 Short version: **Aphrodite doesn't collect your data.** There's no account, no telemetry, no crash reporting and no analytics. Your history, bookmarks and settings stay on your device.
 
@@ -11,6 +11,16 @@ These are stored only in your Aphrodite profile folder on your computer, and we 
 - cookies, site permissions and consent choices
 - downloads and settings
 - the made-up device details each site sees (see below)
+- signatures you ask the PDF editor to remember (kept as pictures; never in a private window)
+
+## Files you open, edit or convert
+
+PDFs you read or edit, and files you convert, make smaller or clean in the Converter, are handled **only on your computer**:
+- They are never uploaded, and we never receive them or anything about them.
+- They are read in a locked-down page that can't connect to the internet, so a file can't contact a website while it is open (for example through a picture or link inside it).
+- The original is left as it is. Every result is a new file, saved where you choose.
+
+A PDF that a website sends you is downloaded from that website, in the same way as the page that linked to it.
 
 ## Connections Aphrodite makes by itself
 

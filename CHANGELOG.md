@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.9.0 (2026-11-11)
+- **Edit PDFs.** The pencil on a PDF's bar opens the tools, right beside the page controls: **highlight**, **draw**, **type** (in a sans, serif or mono face, bold or italic, any colour), **add pictures** and **sign** (draw your signature, type it, or use a picture of it; Aphrodite can remember it on this computer). The **hand** selects what you added so you can move or change it, the **eraser** removes it, and **Undo** and **Redo** step through everything in order. Form fields you fill in are kept. **Save a copy** writes a new file and leaves the original alone, and Aphrodite asks before you close a PDF with changes you haven't saved.
+- **Organise pages.** While editing, the page previews get their own buttons: turn, duplicate or delete pages, add an empty page, add pages from another PDF or a picture, drag a page to move it, or save the chosen pages as a new PDF. A deleted page is really gone from the file, not just hidden.
+- **Redact.** Drag a box over anything, or put a box on every match of a search. Nothing is removed until you apply it. Each redacted page is then rebuilt as a picture with the boxes burnt in, so the words under them are gone from the file, and Aphrodite checks the result before showing it. Text on a redacted page can no longer be selected.
+- **Hidden details and flatten.** The ⋯ button shows what a PDF says about itself (author, program, dates), removes it, or makes what you added a permanent part of the pages.
+- **Converter.** A new page, next to Studio in the sidebar, changes a file's format on this computer. Pictures (PNG, JPEG, WebP, AVIF, GIF, BMP, ICO, SVG) become PNG, JPEG, WebP, BMP, ICO or a PDF. PDFs become pictures or plain text. Word documents, Markdown, HTML, plain text and e-books (EPUB) become PDF, HTML, Markdown, plain text or EPUB. Excel sheets, CSV, TSV and JSON become each other, an HTML table or a PDF. Several files can go at once, and the camera, place, author and other hidden details are left out of what is made.
+- **Reduce size.** Also in the Converter: make pictures and PDFs smaller with Light, Balanced or Strong, or fit a picture under a size you name.
+- **Clean metadata.** Takes the camera, place, author, company, dates and editing history out of JPEG, PNG, WebP, PDF, Word, Excel and EPUB files, and changes nothing else.
+- **Nothing is uploaded.** The Converter and the PDF tools work in a locked-down page with no network: a file you convert can't contact a site, and no site sees it. Originals are never changed; every result is a new file.
+- **PDFs keep their own colours.** A dark theme no longer turns PDF pages dark by itself. Use the moon on the PDF bar when you want dark pages. A PDF that is already on your computer can now be saved as a copy from that bar too.
+- **Bookmark icons without a visit.** A bookmark's icon is now kept from the last time you were on the site, so the new tab page no longer contacts your bookmarked sites to draw their icons.
+
+## 2.8.0 (2026-11-10)
+- **The intro wears your theme.** The welcome animation now uses your Studio theme's colours: its card, the handwriting and the petals.
+- **Theme icon, made dependable.** The taskbar, desktop and Start menu icons now follow the theme you saved, and only that: not a theme you are trying out, a workspace's look or the time of day. A change made just before closing is no longer lost, the icon is put right again after an update, and shortcuts you renamed or pinned again are found too.
+
 ## 2.7.0 (2026-11-10)
 - **Delete a site's data from the lock.** The lock button's panel now has **Delete all data**: it removes that site's cookies, sign-ins and stored data and reloads the page. It asks once more on the button itself, so a stray click can't sign you out.
 - **Aphrodite's own drop-downs in the Shields panel.** Bot checks, Cookie pop-ups and Time zone now open the same rounded lists as the rest of the browser, instead of the system's.
