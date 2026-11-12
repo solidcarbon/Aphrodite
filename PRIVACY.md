@@ -29,7 +29,7 @@ A PDF that a website sends you is downloaded from that website, in the same way 
 
 ## Links you paste or open from other apps
 
-When you paste a link into the address bar or the new tab page, or another app opens a link in Aphrodite, Aphrodite checks it **on your device** before it loads: for known IP-logging services, addresses made to look like a well-known site, disguised links, the redirects of that first load, and a page that pretends to be a well-known site to get your password. To recognise well-known sites, it uses a list of popular websites that ships with Aphrodite, and your bookmarks. **The links themselves aren't sent anywhere and nothing is looked up online.** Turn the checks off in Settings → Privacy & security.
+When you paste a link into the address bar or the new tab page, or another app opens a link in Aphrodite, Aphrodite checks it **on your device** before it loads: for known IP-logging services, addresses made to look like a well-known site, disguised links, the redirects of that first load, and a page that pretends to be a well-known site to get your password. To recognise well-known sites, it uses a list of popular websites that ships with Aphrodite, and your bookmarks; in **Strict mode** (on unless you turn it off), a link to a site on neither asks before opening. **The links themselves aren't sent anywhere and nothing is looked up online.** Turn the checks or Strict mode off in Settings → Privacy & security.
 
 ## Making Aphrodite your default browser
 
@@ -49,7 +49,7 @@ To work, Aphrodite connects to the services below. None of them receive your bro
 | Your search engine (DuckDuckGo by default) | Search suggestions and results | When you type in the address bar or search |
 | GitHub (github.com and its download servers) | Downloading the assistant's models from the public SolidCarbon Works releases page, with no account or key | Only when you turn on the assistant and choose Download for a model |
 
-Lists of dangerous sites are downloaded to your device and checked there. The addresses you visit are **not** sent to anyone for checking.
+Lists of dangerous sites are downloaded to your device and checked there, and one more list of scam sites (Phishing.Database) comes with Aphrodite itself. The addresses you visit are **not** sent to anyone for checking.
 
 The assistant, if you turn it on, runs entirely on your device. What you ask it and the pages it reads are **not** sent anywhere, and its engine has no network access. To suggest a model that suits your computer, Aphrodite looks at how much memory it has and at its graphics card, on your device only; this isn't sent anywhere.
 

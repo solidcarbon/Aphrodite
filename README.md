@@ -91,7 +91,7 @@ Every site gets a **shield panel** (left) with its own switches, and a **privacy
 - **Blocks ads, trackers, disguised (CNAME) trackers and session-recording scripts** automatically.
 - **Says no to cookie pop-ups for you**, through each site's own menus, and lets you take consent back later without signing out.
 - **HTTPS-Only, Secure DNS, WebRTC leak protection and Global Privacy Control**, plus tracking tags removed from links.
-- **Phishing and malware warnings** use lists stored on your computer, refreshed twice a day (or right away with **Update now**). The addresses you visit are never sent anywhere.
+- **Phishing and malware warnings** use lists stored on your computer, refreshed twice a day (or right away with **Update now**), plus about **390,000 known scam sites** built in. The addresses you visit are never sent anywhere.
 - **Bot checks work** (Cloudflare, hCaptcha, reCAPTCHA, Arkose, DataDome) without lowering your protection. For a stubborn site, **Trust this site** fixes it and keeps other companies' trackers blocked.
 
 ---
@@ -107,6 +107,8 @@ Make Aphrodite your **default browser** (Settings → General), and links from D
 - **Disguised links** like `discord.com.free-nitro.ru` or `microsoft.com@another-site` show you the real site.
 - **Redirects are followed**, so a harmless-looking short link can't hand you on to a lookalike.
 - **Fake sign-in pages** that call themselves Discord, Steam, PayPal and others, and ask for your password on an address that isn't theirs, get a warning before you type.
+- **Lookalikes of any well-known site**, like `liches.com` for lichess.org, get a warning with a button to the real site.
+- **Strict mode** (on by default) asks before opening a site that isn't one of the 100,000 best-known and isn't in your bookmarks. Small real sites open with one click.
 
 Only a site's name counts, never the rest of the link, so real links like `discord.com/channels/…` pass straight through. Nothing is looked up online.
 

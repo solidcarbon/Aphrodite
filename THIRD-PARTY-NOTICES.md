@@ -259,6 +259,8 @@ The assistant's models aren't part of the installer. If you turn the assistant o
 
 - **Majestic Million** (© Majestic-12 Ltd; **CC BY 3.0**, https://creativecommons.org/licenses/by/3.0/). Aphrodite ships the first 100,000 domains of the list (`src/main/data/popular-domains.txt`), used to recognise well-known sites when it checks links you paste or open from other apps. Changes: only the domain names are kept, each shortened to the name a site registers (so `www.example.com` becomes `example.com`), without their ranks or other columns. Source: https://majestic.com/reports/majestic-million. Majestic doesn't endorse Aphrodite.
 
+- **Phishing.Database** (© 2018-2025 Mitchell Krog, Nissar Chababy and Phishing.Database contributors; **MIT License**, `licenses/MIT-Phishing.Database.txt`). Aphrodite ships its list of active phishing domains (`src/main/data/phishing-domains.txt`), used to warn about dangerous sites. Changes: sorted, duplicates and entries that aren't plain hostnames removed, and well-known sites' own names and hosting services' bare names left out. Source: https://github.com/Phishing-Database/Phishing.Database.
+
 ## Data downloaded while Aphrodite runs (not distributed with Aphrodite)
 
 Aphrodite downloads these lists straight from their publishers. They aren't part of the installer, and they remain under their authors' licences. Our thanks to:

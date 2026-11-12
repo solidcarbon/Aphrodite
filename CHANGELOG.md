@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.14.0 (2026-11-12)
+- **390,000 more scam sites known.** Phishing.Database's list of phishing sites now comes with Aphrodite and is checked for every page you open and every download, alongside the lists that update twice a day. It's read straight from disk, so it uses almost no memory.
+- **Lookalikes of any well-known site.** A pasted link or a link from another app that's one letter away from one of the 10,000 best-known sites, like *liches.com* for lichess.org, now gets a warning with a **Go to lichess.org** button. Before, only about 50 big brands were checked.
+- **Strict mode, on by default.** A pasted link or a link from another app that leads to a site that isn't one of the 100,000 best-known sites, and isn't in your bookmarks, now asks before opening: scam links often lead to new, little-known sites. Small real sites ask too, and one click opens them. Links you click inside pages and addresses you type aren't affected. Turn it off in **Settings → Privacy & security**.
+
 ## 2.13.0 (2026-11-12)
 - **Open web pages saved on your computer.** Aphrodite now opens .html and .htm files (and .shtml and .xhtml): double-click one after choosing Aphrodite for them in Windows' Default apps, use **Open with → Aphrodite**, or drop the file on Aphrodite's window. It opens in its own tab.
 - **Links between those files work.** A saved page can open the pages next to it, such as offline documentation or a page saved with its parts. Websites still can't open files on your computer, and a local page can only reach files on this computer: never another computer's shared folders, which could make Windows hand your sign-in to them. Files opened straight from a network share (\\server\folder) aren't opened for the same reason; mapped drives work.
