@@ -1,6 +1,6 @@
 # Aphrodite End-User Licence Agreement
 
-**Version 1.1 · Effective 11 November 2026**
+**Version 1.2 · Effective 12 November 2026**
 
 This agreement is between you and **SolidCarbon Works** ("we", "us"). It covers the Aphrodite browser, its installer, its updates and its documentation (together, "Aphrodite"). By installing or using Aphrodite you accept this agreement. If you don't accept it, don't install or use Aphrodite.
 
@@ -44,7 +44,9 @@ Aphrodite is a browser. The websites you visit and the filter lists Aphrodite do
 
 Files you open, edit or convert with Aphrodite stay yours, and so does what you make from them. You're responsible for having the right to use, change and convert them. Converting, reducing, cleaning hidden details and redacting are done carefully but can't be perfect for every file: a conversion can lose formatting, and a file can carry information in places these tools don't reach. Check a result before you rely on it or share it, especially a redacted or cleaned one.
 
-The assistant is an optional feature that runs an AI language model on your own computer. The model is made by a third party and is provided under its own open-source licence (see section 4). What it writes is produced automatically: it can be wrong, incomplete, out of date or made up, even when it sounds certain, and it may misread a page. Its answers are not medical, legal, financial, safety or other professional advice, and they are not statements by us. You decide whether to rely on an answer, and you do so at your own risk: check anything that matters against a source you trust.
+The assistant is an optional feature that runs an AI language model on your own computer. The models are made by a third party and are provided under their own open-source licence (see section 4). What the assistant writes is produced automatically: it can be wrong, incomplete, out of date, offensive or made up, even when it sounds certain, and it may misread a page or be misled by what a website contains. Its answers are not medical, legal, financial, safety or other professional advice, and they are not statements by us. Steps Aphrodite takes to make answers safer, such as removing instructions hidden in pages, reduce these risks but can't remove them. You decide whether to rely on an answer, and you do so at your own risk: check anything that matters against a source you trust. To the extent the law allows, we aren't responsible for any loss or harm that comes from relying on or acting on what the assistant writes.
+
+Aphrodite offers models of different sizes. Its suggestion of which one suits your computer, and its speed check, are estimates. A model marked as less reliable (such as Light) makes mistakes more often, and a model marked as experimental (such as Max) may run slowly or not work properly; if you download a model despite a warning, you do so at your own risk. If you turn on saved chats, they are kept only on your computer, encrypted with your account's protection. Anyone who can use your account on that computer can open them, and they are gone if you delete them, they reach the time you chose, you clear your history, or the files are lost. Keeping them safe and backed up is up to you.
 
 ## 6. Trademarks
 

@@ -244,9 +244,13 @@ Each of these packages is © its authors, and its licence text is included in th
 | tldts-experimental | 7.4.19 | MIT | https://github.com/remusao/tldts |
 | universalify | 2.0.1 | MIT | https://github.com/RyanZim/universalify |
 
-## The assistant's model (downloaded only when you ask for it)
+## The assistant's models (downloaded only when you ask for them)
 
-The assistant's model isn't part of the installer. If you turn the assistant on and choose Download, Aphrodite fetches it from the Aphrodite releases page:
+The assistant's models aren't part of the installer. If you turn the assistant on and choose Download for a model, Aphrodite fetches it from the Aphrodite releases page. Each one was converted to the GGUF file format and reduced to 4-bit precision (Q4_K_M) by bartowski, and is split into parts for download and joined again on your computer. Nothing else was changed. Alibaba Cloud and the Qwen team don't endorse Aphrodite.
+
+- **Qwen3.5-2B** (Light; © Alibaba Cloud; **Apache License 2.0**, `licenses/Apache-2.0.txt`). Source: https://huggingface.co/Qwen/Qwen3.5-2B, converted at https://huggingface.co/bartowski/Qwen_Qwen3.5-2B-GGUF.
+- **Qwen3.5-9B** (Strong; © Alibaba Cloud; **Apache License 2.0**, `licenses/Apache-2.0.txt`). Source: https://huggingface.co/Qwen/Qwen3.5-9B, converted at https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF.
+- **Qwen3.5-35B-A3B** (Max; © Alibaba Cloud; **Apache License 2.0**, `licenses/Apache-2.0.txt`). Source: https://huggingface.co/Qwen/Qwen3.5-35B-A3B, converted at https://huggingface.co/bartowski/Qwen_Qwen3.5-35B-A3B-GGUF.
 
 - **Qwen3.5-4B** (© Alibaba Cloud; **Apache License 2.0**, `licenses/Apache-2.0.txt`). Source: https://huggingface.co/Qwen/Qwen3.5-4B. Changes from the original: the weights were converted to the GGUF file format and reduced to 4-bit precision (Q4_K_M) by bartowski (https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF), and the file is split into parts for download and joined again on your computer. Nothing else was changed. Alibaba Cloud and the Qwen team don't endorse Aphrodite.
 

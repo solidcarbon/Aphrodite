@@ -34,11 +34,13 @@ To work, Aphrodite connects to the services below. None of them receive your bro
 | Your chosen secure-DNS provider (Quad9, Cloudflare or Mullvad) | Looking up website addresses privately | Only if you turn on secure DNS |
 | Cloudflare (cloudflare.com/cdn-cgi/trace) and ipinfo.io | Showing what websites see about your connection, and matching the time zone to your VPN | Only when you open that panel or turn on the VPN time-zone setting |
 | Your search engine (DuckDuckGo by default) | Search suggestions and results | When you type in the address bar or search |
-| GitHub (github.com and its download servers) | Downloading the assistant's model from the public SolidCarbon Works releases page, with no account or key | Only when you turn on the assistant and choose Download |
+| GitHub (github.com and its download servers) | Downloading the assistant's models from the public SolidCarbon Works releases page, with no account or key | Only when you turn on the assistant and choose Download for a model |
 
 Lists of dangerous sites are downloaded to your device and checked there. The addresses you visit are **not** sent to anyone for checking.
 
-The assistant, if you turn it on, runs entirely on your device. What you ask it and the pages it reads are **not** sent anywhere, and its engine has no network access. Chats are kept in memory only and are gone when you start a new chat or close the window.
+The assistant, if you turn it on, runs entirely on your device. What you ask it and the pages it reads are **not** sent anywhere, and its engine has no network access. To suggest a model that suits your computer, Aphrodite looks at how much memory it has and at its graphics card, on your device only; this isn't sent anywhere.
+
+By default, chats are kept in memory only and are gone when you start a new chat or close the window. If you turn on **Save chats** (Settings → Assistant), each chat, with the text of the page it was about, is saved on your device so you can open it again. Saved chats are encrypted with your operating system's protection for your account on that computer (on Windows, DPAPI), are never saved for private windows, and are deleted after the time you choose (30 days unless you change it), when you delete them, or when you clear your browsing history. Saving is turned off where the system offers no such protection. Anyone signed in to your account on that computer can open them in Aphrodite, just like your browsing history.
 
 ## Fingerprint protection
 
