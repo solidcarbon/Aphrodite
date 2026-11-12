@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.12.0 (2026-11-12)
+- **Make Aphrodite your default browser.** **Settings → General → Default browser** sets it up on Windows and Linux, so links from Discord, email and other apps open in Aphrodite. On Windows, it opens Windows' Default apps page on Aphrodite, where you choose it (Windows doesn't let apps make themselves the default). Windows users need to install this version with the installer for Aphrodite to appear there.
+- **Links checked before they open.** When you paste a link into the address bar or the new tab page, or another app opens one in Aphrodite, it's checked first, on this computer:
+  - known **IP loggers** (Grabify, IPLogger and their disguised addresses) are stopped, because opening one shows your IP address to whoever made the link;
+  - **lookalike addresses** made to pass for a well-known site, like *dlscord.com*, *steamcommunlty.com*, *rnicrosoft.com* or a name spelled with letters from another alphabet;
+  - **disguised links**, like *discord.com.free-nitro.ru* or *microsoft.com@another-site*, where the real site is hidden further along;
+  - links to a bare IP address, or straight to a program from a site you don't know.
+- **Redirects and fake sign-in pages too.** A short link is followed and checked where it really lands. Once the page opens, Aphrodite also warns you if it calls itself Discord, Steam, PayPal or another well-known name and asks for your password on an address that isn't theirs.
+- **No false alarms on real links.** Only the site's name counts, not the rest of the link, so *discord.com/channels/…* is fine. Well-known sites and sites you bookmarked are never treated as lookalikes, and links you click inside pages or addresses you type aren't checked at all. Nothing is looked up anywhere. You can still open a flagged link if you trust it. Turn the checks off in **Settings → Privacy & security**.
+- **Update the phishing and malware lists yourself.** Settings → Privacy & security now shows when the lists were last updated, with an **Update now** button. They still update by themselves twice a day.
+- **Remove single pages from your history.** Point at a page in History and click the bin to remove just that visit, or **Remove day** to remove everything from one day.
+- **Smaller touches.** Model cards in Settings → Assistant are tidier once a model is downloaded, the download line no longer jumps as the speed changes, the sidebar's bottom buttons are evenly spaced, and window titles read "Page - Aphrodite" like other browsers.
+
 ## 2.11.1 (2026-11-12)
 - **A clearer way to pick a model.** Settings → Assistant now shows the four models as cards, side by side: what each is good for, how fast and how smart it is, its download size and the memory it needs. The one that fits your computer is marked "Best for this computer".
 - **Shorter warnings, still there.** Light's and Max's warnings are now one word on their cards; tap or point at it to read the whole thing, and it's shown in full again before you download.

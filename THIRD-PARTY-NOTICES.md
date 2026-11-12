@@ -30,6 +30,7 @@ The following are covered by the **MPL-2.0** (`licenses/MPL-2.0.txt`). Aphrodite
 | @remusao/smaz-decompress | 2.2.0 | https://github.com/remusao/mono |
 | @remusao/trie | 2.1.0 | https://github.com/remusao/mono |
 | dompurify (MPL-2.0 or Apache-2.0; used under Apache-2.0) | 3.4.17 | https://github.com/cure53/DOMPurify |
+| Public Suffix List (the list of domain endings, as bundled inside tldts; used to tell where a site's name starts) | from tldts 7.4.18 | https://publicsuffix.org/list/ |
 
 ## Apache License 2.0
 
@@ -253,6 +254,10 @@ The assistant's models aren't part of the installer. If you turn the assistant o
 - **Qwen3.5-35B-A3B** (Max; © Alibaba Cloud; **Apache License 2.0**, `licenses/Apache-2.0.txt`). Source: https://huggingface.co/Qwen/Qwen3.5-35B-A3B, converted at https://huggingface.co/bartowski/Qwen_Qwen3.5-35B-A3B-GGUF.
 
 - **Qwen3.5-4B** (© Alibaba Cloud; **Apache License 2.0**, `licenses/Apache-2.0.txt`). Source: https://huggingface.co/Qwen/Qwen3.5-4B. Changes from the original: the weights were converted to the GGUF file format and reduced to 4-bit precision (Q4_K_M) by bartowski (https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF), and the file is split into parts for download and joined again on your computer. Nothing else was changed. Alibaba Cloud and the Qwen team don't endorse Aphrodite.
+
+## Data shipped with Aphrodite
+
+- **Majestic Million** (© Majestic-12 Ltd; **CC BY 3.0**, https://creativecommons.org/licenses/by/3.0/). Aphrodite ships the first 100,000 domains of the list (`src/main/data/popular-domains.txt`), used to recognise well-known sites when it checks links you paste or open from other apps. Changes: only the domain names are kept, each shortened to the name a site registers (so `www.example.com` becomes `example.com`), without their ranks or other columns. Source: https://majestic.com/reports/majestic-million. Majestic doesn't endorse Aphrodite.
 
 ## Data downloaded while Aphrodite runs (not distributed with Aphrodite)
 
