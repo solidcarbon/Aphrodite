@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.11.1 (2026-11-12)
+- **A clearer way to pick a model.** Settings → Assistant now shows the four models as cards, side by side: what each is good for, how fast and how smart it is, its download size and the memory it needs. The one that fits your computer is marked "Best for this computer".
+- **Shorter warnings, still there.** Light's and Max's warnings are now one word on their cards; tap or point at it to read the whole thing, and it's shown in full again before you download.
+- **Your models at a glance.** A downloaded model's card shows whether it's in use, its speed check result, and Test speed; Delete is under the "…" button. The speed of the model in use also appears next to your computer's details.
+- **Fixed:** Max showed a "Less reliable" label next to "Experimental".
+
 ## 2.11.0 (2026-11-12)
 - **A model for every computer.** The assistant now comes in four sizes, all from the same open-source Qwen family: **Light** for older or modest computers, **Standard** (the one from 2.10), **Strong** for computers with plenty of memory or a separate graphics card, and **Max** for computers with 32 GB of memory or more. Download as many as you like in **Settings → Assistant** and choose which one answers. Max is marked experimental: it hasn't been fully tested yet. Light is marked less reliable: it gets facts wrong more often, so don't rely on it for health, legal or money questions.
 - **Harder to fool, safer to ask.** Sentences in a page that try to give the assistant orders are taken out before it reads the page, and it tells you when a page tried. Text you select for Explain or Translate is treated as text, never as orders. It won't call a shop or site safe (it can't check), and points out warning signs instead. It doesn't give medicine doses, answers with care when someone is struggling, and no longer repeats itself or adds emojis you didn't ask for.
