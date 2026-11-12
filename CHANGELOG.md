@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.13.0 (2026-11-12)
+- **Open web pages saved on your computer.** Aphrodite now opens .html and .htm files (and .shtml and .xhtml): double-click one after choosing Aphrodite for them in Windows' Default apps, use **Open with → Aphrodite**, or drop the file on Aphrodite's window. It opens in its own tab.
+- **Links between those files work.** A saved page can open the pages next to it, such as offline documentation or a page saved with its parts. Websites still can't open files on your computer, and a local page can only reach files on this computer: never another computer's shared folders, which could make Windows hand your sign-in to them. Files opened straight from a network share (\\server\folder) aren't opened for the same reason; mapped drives work.
+- **Linux:** the .deb and the AppImage now list Aphrodite for web pages too.
+- **Privacy guide and documents.** Settings → Privacy guide now explains the link checks and local web pages. The privacy policy describes them, and the licence agreement (version 1.3) notes that link checks are best-effort.
+
 ## 2.12.0 (2026-11-12)
 - **Make Aphrodite your default browser.** **Settings → General → Default browser** sets it up on Windows and Linux, so links from Discord, email and other apps open in Aphrodite. On Windows, it opens Windows' Default apps page on Aphrodite, where you choose it (Windows doesn't let apps make themselves the default). Windows users need to install this version with the installer for Aphrodite to appear there.
 - **Links checked before they open.** When you paste a link into the address bar or the new tab page, or another app opens one in Aphrodite, it's checked first, on this computer:

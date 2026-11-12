@@ -1,6 +1,6 @@
 # Aphrodite privacy policy
 
-**Effective 11 November 2026**
+**Effective 12 November 2026**
 
 Short version: **Aphrodite doesn't collect your data.** There's no account, no telemetry, no crash reporting and no analytics. Your history, bookmarks and settings stay on your device.
 
@@ -22,6 +22,19 @@ PDFs you read or edit, and files you convert, make smaller or clean in the Conve
 
 A PDF that a website sends you is downloaded from that website, in the same way as the page that linked to it.
 
+**Web pages saved on your computer** (.html files) open as ordinary web pages, read from your computer:
+- They can open other files next to them on your computer, but never files on another computer's shared folders, and Aphrodite never opens a page straight from a network share. Reaching another computer's files could make your operating system hand your sign-in to it.
+- Like any web page, a local page can load pictures, fonts and scripts from the internet, and its scripts can see where the file is on your computer (which can include your account's name). Aphrodite's tracker blocking and fingerprint protection apply to it as to any page. Open only files you trust.
+- Local pages aren't kept in your browsing history. Websites can never open files on your computer.
+
+## Links you paste or open from other apps
+
+When you paste a link into the address bar or the new tab page, or another app opens a link in Aphrodite, Aphrodite checks it **on your device** before it loads: for known IP-logging services, addresses made to look like a well-known site, disguised links, the redirects of that first load, and a page that pretends to be a well-known site to get your password. To recognise well-known sites, it uses a list of popular websites that ships with Aphrodite, and your bookmarks. **The links themselves aren't sent anywhere and nothing is looked up online.** Turn the checks off in Settings → Privacy & security.
+
+## Making Aphrodite your default browser
+
+If you make Aphrodite your default browser, only your operating system's own settings change (on Windows, you choose it in Default apps; on Linux, Aphrodite asks your system to use it, and an AppImage adds a shortcut file to your account's applications folder). Nothing is sent anywhere.
+
 ## Connections Aphrodite makes by itself
 
 To work, Aphrodite connects to the services below. None of them receive your browsing history from Aphrodite. Like any internet connection, they can see your IP address, and their own privacy policies apply.
@@ -30,7 +43,7 @@ To work, Aphrodite connects to the services below. None of them receive your bro
 |---|---|---|
 | GitHub (github.com, raw.githubusercontent.com) | Checking for and downloading Aphrodite updates (from the public SolidCarbon Works releases page, with no account or key), and downloading filter lists published by Ghostery | At start-up and every few hours |
 | AdGuard (filters.adtidy.org) | Ad and link-tracking filter lists | About once a day |
-| malware-filter (malware-filter.gitlab.io) | Phishing and malware lists, checked on your device | About twice a day |
+| malware-filter (malware-filter.gitlab.io) | Phishing and malware lists, checked on your device | About twice a day, or when you choose Update now |
 | Your chosen secure-DNS provider (Quad9, Cloudflare or Mullvad) | Looking up website addresses privately | Only if you turn on secure DNS |
 | Cloudflare (cloudflare.com/cdn-cgi/trace) and ipinfo.io | Showing what websites see about your connection, and matching the time zone to your VPN | Only when you open that panel or turn on the VPN time-zone setting |
 | Your search engine (DuckDuckGo by default) | Search suggestions and results | When you type in the address bar or search |
@@ -78,7 +91,7 @@ Aphrodite collects no personal data from anyone, including children.
 
 ## Your rights
 
-As we hold no personal data about you, there's nothing for us to access, correct or delete. To remove all your data, clear your browsing data in Aphrodite's settings, or uninstall Aphrodite and delete its profile folder.
+As we hold no personal data about you, there's nothing for us to access, correct or delete. To remove single pages from your history, use History; to remove all your data, clear your browsing data in Aphrodite's settings, or uninstall Aphrodite and delete its profile folder.
 
 ## Changes and contact
 
