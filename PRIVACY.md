@@ -27,9 +27,20 @@ A PDF that a website sends you is downloaded from that website, in the same way 
 - Like any web page, a local page can load pictures, fonts and scripts from the internet, and its scripts can see where the file is on your computer (which can include your account's name). Aphrodite's tracker blocking and fingerprint protection apply to it as to any page. Open only files you trust.
 - Local pages aren't kept in your browsing history. Websites can never open files on your computer.
 
-## Links you paste or open from other apps
+## Links: checked before they open
 
-When you paste a link into the address bar or the new tab page, or another app opens a link in Aphrodite, Aphrodite checks it **on your device** before it loads: for known IP-logging services, addresses made to look like a well-known site, disguised links, the redirects of that first load, and a page that pretends to be a well-known site to get your password. To recognise well-known sites, it uses a list of popular websites that ships with Aphrodite, and your bookmarks; in **Strict mode** (on unless you turn it off), a link to a site on neither asks before opening. **The links themselves aren't sent anywhere and nothing is looked up online.** Turn the checks or Strict mode off in Settings → Privacy & security.
+Aphrodite checks a link **on your device** before it loads, in three cases:
+- you paste it into the address bar or the new tab page;
+- another app (Discord, email, chat) opens it in Aphrodite;
+- you click it on a website and it leads to a different site.
+
+It looks for known IP-logging services, addresses made to look like a well-known site, disguised links, the redirects of that first load, and a page that pretends to be a well-known site to get your password. To recognise well-known sites, it uses a list of popular websites that ships with Aphrodite, and your bookmarks.
+
+Not checked: addresses you type, links within one site, and links on a search engine's results.
+
+In **Strict mode** (on unless you turn it off), a pasted link or a link from another app that leads to a site on neither list asks before opening. Strict mode never applies to links you click on websites.
+
+**The links themselves aren't sent anywhere and nothing is looked up online.** Each of the three (the checks, the checks for clicked links, Strict mode) has its own switch in Settings → Privacy & security.
 
 ## Your computer and home network
 
@@ -61,7 +72,7 @@ To work, Aphrodite connects to the services below. None of them receive your bro
 | Your search engine (DuckDuckGo by default) | Search suggestions and results | When you type in the address bar or search |
 | GitHub (github.com and its download servers) | Downloading the assistant's models from the public SolidCarbon Works releases page, with no account or key | Only when you turn on the assistant and choose Download for a model |
 
-Lists of dangerous sites are downloaded to your device and checked there, and one more list of scam sites (Phishing.Database) comes with Aphrodite itself. The addresses you visit are **not** sent to anyone for checking.
+Lists of dangerous sites are downloaded to your device and checked there, and one more list of scam sites (Phishing.Database) comes with Aphrodite itself. They are checked for the pages you open, your downloads, and everything a page loads from another site. The addresses you visit are **not** sent to anyone for checking.
 
 The assistant, if you turn it on, runs entirely on your device. What you ask it and the pages it reads are **not** sent anywhere, and its engine has no network access. To suggest a model that suits your computer, Aphrodite looks at how much memory it has and at its graphics card, on your device only; this isn't sent anywhere.
 

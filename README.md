@@ -43,7 +43,7 @@ Every site sees its own made-up device, so sites can't link your visits. Sign-in
 <td width="33%" valign="top">
 
 ### 🔗 Safer links
-Links you paste or open from Discord, email and other apps are checked for IP loggers, lookalikes and fake sign-in pages.
+Links you paste, open from Discord, email and other apps, or click on websites are checked for IP loggers, lookalikes and fake sign-in pages.
 
 </td>
 </tr>
@@ -91,7 +91,7 @@ Every site gets a **shield panel** (left) with its own switches, and a **privacy
 - **Blocks ads, trackers, disguised (CNAME) trackers and session-recording scripts** automatically.
 - **Says no to cookie pop-ups for you**, through each site's own menus, and lets you take consent back later without signing out.
 - **HTTPS-Only, Secure DNS, WebRTC leak protection and Global Privacy Control**, plus tracking tags removed from links.
-- **Phishing and malware warnings** use lists stored on your computer, refreshed twice a day (or right away with **Update now**), plus about **390,000 known scam sites** built in. The addresses you visit are never sent anywhere.
+- **Phishing and malware warnings** use lists stored on your computer, refreshed twice a day (or right away with **Update now**), plus about **390,000 known scam sites** built in. A page that isn't listed also can't load scripts or pictures from an address that is. The addresses you visit are never sent anywhere.
 - **Websites can't look into your computer or home network.** A site can't reach programs on your PC or your router, printer and cameras, also not through names that secretly point there (DNS rebinding). If a website tries to send you to such an address, Aphrodite asks first. Every attempt is on the privacy receipt.
 - **Tab icons can't be used to follow you**, and **"What it saw"** on the receipt shows the made-up fingerprint a site was given next to your real one.
 - **Bot checks work** (Cloudflare, hCaptcha, reCAPTCHA, Arkose, DataDome) without lowering your protection. For a stubborn site, **Trust this site** fixes it and keeps other companies' trackers blocked.
@@ -110,7 +110,8 @@ Make Aphrodite your **default browser** (Settings → General), and links from D
 - **Redirects are followed**, so a harmless-looking short link can't hand you on to a lookalike.
 - **Fake sign-in pages** that call themselves Discord, Steam, PayPal and others, and ask for your password on an address that isn't theirs, get a warning before you type.
 - **Lookalikes of any well-known site**, like `liches.com` for lichess.org, get a warning with a button to the real site.
-- **Strict mode** (on by default) asks before opening a site that isn't one of the 100,000 best-known and isn't in your bookmarks. Small real sites open with one click.
+- **Strict mode** (on by default) asks before opening a pasted link or a link from another app that leads to a site that isn't one of the 100,000 best-known and isn't in your bookmarks. Small real sites open with one click.
+- **Links you click on websites** get the same checks when they lead to another site. Never on a search engine's results or within one site, and without Strict mode's question, so ordinary browsing isn't interrupted. It has its own switch in Settings.
 
 Only a site's name counts, never the rest of the link, so real links like `discord.com/channels/…` pass straight through. Nothing is looked up online.
 
