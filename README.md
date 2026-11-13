@@ -92,6 +92,8 @@ Every site gets a **shield panel** (left) with its own switches, and a **privacy
 - **Says no to cookie pop-ups for you**, through each site's own menus, and lets you take consent back later without signing out.
 - **HTTPS-Only, Secure DNS, WebRTC leak protection and Global Privacy Control**, plus tracking tags removed from links.
 - **Phishing and malware warnings** use lists stored on your computer, refreshed twice a day (or right away with **Update now**), plus about **390,000 known scam sites** built in. The addresses you visit are never sent anywhere.
+- **Websites can't look into your computer or home network.** A site can't reach programs on your PC or your router, printer and cameras, also not through names that secretly point there (DNS rebinding). If a website tries to send you to such an address, Aphrodite asks first. Every attempt is on the privacy receipt.
+- **Tab icons can't be used to follow you**, and **"What it saw"** on the receipt shows the made-up fingerprint a site was given next to your real one.
 - **Bot checks work** (Cloudflare, hCaptcha, reCAPTCHA, Arkose, DataDome) without lowering your protection. For a stubborn site, **Trust this site** fixes it and keeps other companies' trackers blocked.
 
 ---

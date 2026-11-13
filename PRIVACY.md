@@ -1,6 +1,6 @@
 # Aphrodite privacy policy
 
-**Effective 12 November 2026**
+**Effective 13 November 2026**
 
 Short version: **Aphrodite doesn't collect your data.** There's no account, no telemetry, no crash reporting and no analytics. Your history, bookmarks and settings stay on your device.
 
@@ -31,6 +31,18 @@ A PDF that a website sends you is downloaded from that website, in the same way 
 
 When you paste a link into the address bar or the new tab page, or another app opens a link in Aphrodite, Aphrodite checks it **on your device** before it loads: for known IP-logging services, addresses made to look like a well-known site, disguised links, the redirects of that first load, and a page that pretends to be a well-known site to get your password. To recognise well-known sites, it uses a list of popular websites that ships with Aphrodite, and your bookmarks; in **Strict mode** (on unless you turn it off), a link to a site on neither asks before opening. **The links themselves aren't sent anywhere and nothing is looked up online.** Turn the checks or Strict mode off in Settings → Privacy & security.
 
+## Your computer and home network
+
+A website's code runs on your computer, so it could try to reach programs running on it and devices on your network (router, printer, cameras). Aphrodite refuses that, and asks you first when a website tries to send you to such an address. Each attempt is listed on that site's privacy receipt, which stays on your device.
+
+To do this, every website address lookup passes through a small relay inside Aphrodite. It keeps nothing on disk and remembers names only as scrambled fingerprints, until Aphrodite closes.
+
+If you use a VPN app, Aphrodite tests it in the background, about every ten minutes: it asks the app for a public test name that points at your own computer (such as localtest.me) and watches whether a connection arrives. If the app doesn't refuse such names, Aphrodite looks up the names pages use itself, encrypted, at your secure-DNS provider (Quad9 unless you chose another), **through your VPN**. This happens even when secure DNS is turned off, because the alternative would be a lookup outside your VPN.
+
+## Error reports websites ask for
+
+A website can ask a browser to send it error reports up to a minute after you've left the page (the Reporting API and Network Error Logging). Aphrodite never sends these.
+
 ## Making Aphrodite your default browser
 
 If you make Aphrodite your default browser, only your operating system's own settings change (on Windows, you choose it in Default apps; on Linux, Aphrodite asks your system to use it, and an AppImage adds a shortcut file to your account's applications folder). Nothing is sent anywhere.
@@ -44,7 +56,7 @@ To work, Aphrodite connects to the services below. None of them receive your bro
 | GitHub (github.com, raw.githubusercontent.com) | Checking for and downloading Aphrodite updates (from the public SolidCarbon Works releases page, with no account or key), and downloading filter lists published by Ghostery | At start-up and every few hours |
 | AdGuard (filters.adtidy.org) | Ad and link-tracking filter lists | About once a day |
 | malware-filter (malware-filter.gitlab.io) | Phishing and malware lists, checked on your device | About twice a day, or when you choose Update now |
-| Your chosen secure-DNS provider (Quad9, Cloudflare or Mullvad) | Looking up website addresses privately | Only if you turn on secure DNS |
+| Your chosen secure-DNS provider (Quad9, Cloudflare or Mullvad) | Looking up website addresses privately | When secure DNS is on. Behind a VPN app also when it is off, through the VPN: for unmasking disguised trackers, for testing the VPN app, and for checking names when the app doesn't refuse ones that point at your network (see "Your computer and home network") |
 | Cloudflare (cloudflare.com/cdn-cgi/trace) and ipinfo.io | Showing what websites see about your connection, and matching the time zone to your VPN | Only when you open that panel or turn on the VPN time-zone setting |
 | Your search engine (DuckDuckGo by default) | Search suggestions and results | When you type in the address bar or search |
 | GitHub (github.com and its download servers) | Downloading the assistant's models from the public SolidCarbon Works releases page, with no account or key | Only when you turn on the assistant and choose Download for a model |
