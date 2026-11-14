@@ -1,6 +1,6 @@
 # Aphrodite privacy policy
 
-**Effective 13 November 2026**
+**Effective 14 November 2026**
 
 Short version: **Aphrodite doesn't collect your data.** There's no account, no telemetry, no crash reporting and no analytics. Your history, bookmarks and settings stay on your device.
 
@@ -65,7 +65,7 @@ To work, Aphrodite connects to the services below. None of them receive your bro
 | Service | Why | When |
 |---|---|---|
 | GitHub (github.com, raw.githubusercontent.com) | Checking for and downloading Aphrodite updates (from the public SolidCarbon Works releases page, with no account or key), and downloading filter lists published by Ghostery | At start-up and every few hours |
-| AdGuard (filters.adtidy.org) | Ad and link-tracking filter lists | About once a day |
+| AdGuard (filters.adtidy.org) | Ad and link-tracking filter lists | Ad lists about once a day, the link-tracking list about once a week |
 | malware-filter (malware-filter.gitlab.io) | Phishing and malware lists, checked on your device | About twice a day, or when you choose Update now |
 | Your chosen secure-DNS provider (Quad9, Cloudflare or Mullvad) | Looking up website addresses privately | When secure DNS is on. Behind a VPN app also when it is off, through the VPN: for unmasking disguised trackers, for testing the VPN app, and for checking names when the app doesn't refuse ones that point at your network (see "Your computer and home network") |
 | Cloudflare (cloudflare.com/cdn-cgi/trace) and ipinfo.io | Showing what websites see about your connection, and matching the time zone to your VPN | Only when you open that panel or turn on the VPN time-zone setting |

@@ -1,6 +1,6 @@
 # Aphrodite End-User Licence Agreement
 
-**Version 1.3 · Effective 12 November 2026**
+**Version 1.4 · Effective 14 November 2026**
 
 This agreement is between you and **SolidCarbon Works** ("we", "us"). It covers the Aphrodite browser, its installer, its updates and its documentation (together, "Aphrodite"). By installing or using Aphrodite you accept this agreement. If you don't accept it, don't install or use Aphrodite.
 
@@ -42,7 +42,7 @@ Nothing in this agreement limits the rights those licences give you. In particul
 
 Aphrodite is a browser. The websites you visit and the filter lists Aphrodite downloads all belong to third parties. Their own terms apply to them, and we're not responsible for them. Blocking ads, trackers, consent pop-ups or dangerous sites is done on a best-effort basis: it will miss some things and may sometimes break a site.
 
-The checks Aphrodite makes on links you paste or open from other apps (for IP loggers, lookalike or disguised addresses and fake sign-in pages) are also best-effort. They can miss a harmful link, especially a new one, and can sometimes warn about a safe one. A link that isn't flagged isn't promised to be safe, and if you choose to open a link Aphrodite warned you about, you do so at your own risk. Web pages saved on your computer (.html files) run like any web page: open only files you trust. If you make Aphrodite your default browser or the program for a type of file, that is a choice in your operating system's settings, which you can change back there at any time.
+The checks Aphrodite makes on links you paste, open from other apps or click on websites (for IP loggers, lookalike or disguised addresses and fake sign-in pages) are also best-effort. They can miss a harmful link, especially a new one, and can sometimes warn about a safe one. A link that isn't flagged isn't promised to be safe, and if you choose to open a link Aphrodite warned you about, you do so at your own risk. Web pages saved on your computer (.html files) run like any web page: open only files you trust. If you make Aphrodite your default browser or the program for a type of file, that is a choice in your operating system's settings, which you can change back there at any time.
 
 Files you open, edit or convert with Aphrodite stay yours, and so does what you make from them. You're responsible for having the right to use, change and convert them. Converting, reducing, cleaning hidden details and redacting are done carefully but can't be perfect for every file: a conversion can lose formatting, and a file can carry information in places these tools don't reach. Check a result before you rely on it or share it, especially a redacted or cleaned one.
 

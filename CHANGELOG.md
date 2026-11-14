@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.18.0 (2026-11-14)
+- **Ask the assistant about Aphrodite itself.** She now knows your browser: your name from Settings, how many tabs are open and which are asleep or pinned, what the shields have stopped (in total, this week and today), what's on this site's privacy receipt, your settings, and what's kept on this computer. Ask why your daily briefing shows only two things and she tells you which parts had nothing to show, and why (for example, "Save browsing history is off"). She also explains how every protection works, and what it doesn't do, from a help library of over a hundred short articles written for this version. Everything is read on this computer, for that one question, and never leaves it. Private windows tell her nothing about other windows, history or the briefing.
+- **She can point you to the right setting.** When a question is about a setting, an **Open Settings → …** button appears under her answer. She can't change settings herself: you click.
+- **Answers start much sooner.** The assistant used to re-read her instructions before every answer. Now she reads them once and starts from where they end, so a question gets its first words in about a second instead of eight to twelve on a laptop processor. The first question after she wakes up still takes a moment.
+- **Fixed:** the daily briefing's shield numbers were counted by UTC day, so things blocked just after midnight landed on the wrong day.
+- **Fixed wording:** Settings said fingerprint values change "per session" and ad lists refresh "weekly"; values last as long as a site's cookies, and ad lists refresh daily. The Privacy guide now says a site with shields down still can't reach your computer or home network. The daily briefing's description no longer lists live clips twice.
+- **Licence and privacy policy:** the licence (1.4) now names the checks on links you click on websites too, and the privacy policy says how often each AdGuard list is fetched.
+
 ## 2.17.1 (2026-11-14)
 - **Highlights without the coloured outline.** Studio → Highlights now chooses how things show themselves, not just how the glow looks. **When you type** (search boxes, text fields, menus and the card you chose): Accent outline, Quiet (no colour at all), Soft fill (a faint tint instead of a line) or Lift (rises a little with a soft shadow). **Changed live clips**: Accent outline, Soft fill, Dot only (the card stays plain, only the dot shows it changed) or Quiet. Thickness, strength, colour and the pulse still apply where they fit.
 
