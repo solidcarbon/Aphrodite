@@ -1,10 +1,11 @@
 # Changelog
 
-## 2.22.0 (2026-11-17)
+## 2.22.0 (2026-11-18)
 - **Every version in one list.** Settings → About & updates shows this version's changes in full, and every earlier one, test versions included, under **Previous versions**: a line each that opens its notes.
 - **Style the newest parts.** Interface CSS's list of every part now includes the assistant, the privacy receipt, What this site saw, update notes and the changelog. Its examples show how to style light mode and dark mode separately.
 - **Easier to read: What this site saw.** The two hidden drawings sit one above the other at full size, instead of side by side at half size.
 - **Disguised trackers are remembered.** Once caught, a tracker hiding behind a site's own address is blocked at once on later visits, without asking DNS again. The first check waits longer for its answer, and says so when it takes a while.
+- **Tidier Settings and Studio.** Their side lists group sections under headings. Controls you rarely need are folded away: where fingerprint protection reaches (Privacy & security) and fine-tuning of type (Studio). In Studio, the menus and buttons on each card line up at the width of the longest one. The Privacy guide's labels share one width, and "When you use it" now reads "On use only".
 - **Fixed:** after you switched between light and dark, a pinned taskbar icon could keep the old theme's colours while Aphrodite was closed.
 
 ### Privacy and security
