@@ -1,6 +1,6 @@
 # Aphrodite privacy policy
 
-**Effective 17 November 2026**
+**Effective 19 November 2026**
 
 Short version: **Aphrodite doesn't collect your data.** There's no account, no telemetry, no crash reporting and no analytics. Your history, bookmarks and settings stay on your device.
 
@@ -13,6 +13,7 @@ These are stored only in your Aphrodite profile folder on your computer, and we 
 - the made-up device details each site sees (see below)
 - signatures you ask the PDF editor to remember (kept as pictures, encrypted with your operating system's protection for your account; never in a private window)
 - disguised trackers Aphrodite has caught, for two weeks, so it can block them at once next time (scrambled, so the file doesn't show which sites they were on, and encrypted; not from private windows or with Save browsing history off; forgotten with Clear history)
+- extensions you add, your choices for each (where it runs, which programs it may start), and what each extension stores for itself (deleted when you remove it); other sites whose scripts you allowed on a site (never from a private window)
 
 With **Save browsing history** off, no visit is written: no history list, downloads list, visit times or privacy receipts. Sites' own cookies and data, and the list of sites that stored data, stay until you delete them. **Clear history** removes the history list together with visit times, receipts, the Leak log and noticed changes. A **private window** writes none of these, and nothing you choose in it (lowering shields, trusting a site, continuing to an HTTP site) is kept after it closes.
 
@@ -55,6 +56,21 @@ To do this, every website address lookup passes through a small relay inside Aph
 
 If you use a VPN app, Aphrodite tests it in the background, about every ten minutes: it asks the app for a public test name that points at your own computer (such as localtest.me) and watches whether a connection arrives. If the app doesn't refuse such names, Aphrodite looks up the names pages use itself, encrypted, at your secure-DNS provider (Quad9 unless you chose another), **through your VPN**. This happens even when secure DNS is turned off, because the alternative would be a lookup outside your VPN.
 
+## Extensions
+
+Extensions are made by other people and companies, and **their own privacy policies apply to what they do**. Before you add one, Aphrodite shows in plain words what it will be able to do, and says so when it isn't from a store. What Aphrodite does around them:
+- **Where they run:** never in private windows. Each one runs on the sites you choose (every site, every site except some, only some, or only when you click it), and you can turn one off on any site.
+- **Their own connections** go through Aphrodite's protections: known dangerous and tracking addresses are refused, plain HTTP is made secure, and they can't reach your computer or your home network unless their own list names an address there. Each extension's card lists the sites it contacted, kept in memory until Aphrodite closes.
+- **Their own rules** for blocking or redirecting requests (declarativeNetRequest) run only after Aphrodite's protections: they can block more, never less, and can't remove Aphrodite's privacy signal or cookie protection. Their rules and settings are kept on this computer.
+- **Cookies:** an extension with that permission sees and changes cookies only for sites it can reach, never for a site you turned it off for.
+- **Settings for syncing** that an extension saves stay on this computer; Aphrodite syncs nothing. Facts about your computer it may ask for (processor, memory, screens, disks) are rounded.
+- **Recording and saving:** an extension can record your screen or a window only after you choose it in Aphrodite's picker, and a tab only after you allow it (a red dot shows while it records), each time. It can save copies of pages it can reach after you allow that once. What it records or saves goes to the extension, and its own privacy policy applies.
+- **Sign-in windows** an extension opens show the site's name; the code meant for the extension is handed to it directly and never sent anywhere else.
+- **Your bookmarks, history and downloads:** an extension with those permissions can read them on this computer (never a private window's). It asks the first time it wants to delete history or browsing data, or open or delete downloaded files. It can make a site stricter but never looser, and it can only read privacy settings, never change them.
+- **User scripts** an extension adds run only on sites it can reach, never on a site you turned it off for, each in a space of its own.
+- **Asking first:** an extension can start a program on your computer (native messaging) or get more access only after you say yes. Apart from the store contacts below, Aphrodite doesn't send anything about your extensions anywhere.
+- **Stores:** Aphrodite contacts the Chrome Web Store (Google) or Firefox Add-ons (Mozilla) only when you choose to add an extension from one, or press **Check for updates**, after a notice saying what they'll see. They see your IP address and which extensions you ask about; Google also sees a browser version number, which its store needs to pick the right file. No cookies or sign-in are sent.
+
 ## Error reports websites ask for
 
 A website can ask a browser to send it error reports up to a minute after you've left the page (the Reporting API and Network Error Logging). Aphrodite never sends these.
@@ -79,6 +95,7 @@ To work, Aphrodite connects to the services below. None of them receive your bro
 | Sites you return to | Their privacy-policy page, to tell you when it changed (Tell me what changed) | At most every 3 days per site, only for the site you're on, over HTTPS only (redirects included), without cookies or logins |
 | Pages you clip | Checking the part of the page you clipped | At the interval you chose for each clip; "anonymously" without your cookies, "as you" with them |
 | GitHub (github.com and its download servers) | Downloading the assistant's models from the public SolidCarbon Works releases page, with no account or key | Only when you turn on the assistant and choose Download for a model |
+| Chrome Web Store (Google: clients2.google.com and its download servers) and Firefox Add-ons (Mozilla: addons.mozilla.org) | Downloading an extension you chose, and checking your extensions from them for updates | Only when you add one from a store or press Check for updates, after a notice (see "Extensions") |
 
 Lists of dangerous sites are downloaded to your device and checked there, and one more list of scam sites (Phishing.Database) comes with Aphrodite itself. They are checked for the pages you open, your downloads, and everything a page loads from another site. The addresses you visit are **not** sent to anyone for checking.
 

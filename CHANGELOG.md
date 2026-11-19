@@ -1,6 +1,37 @@
 # Changelog
 
-## 2.22.0 (2026-11-18)
+## 3.0.0 (2026-11-19)
+- **Extensions are back, Chrome and Firefox.** Add them from the Chrome Web Store (its button reads **Add to Aphrodite**) or Firefox Add-ons (Aphrodite offers it on an extension's page), from a .zip, .crx or .xpi file, or from a folder, your own or one from GitHub. Before anything is added, you see in plain words what it will be able to do, the most serious first, and whether a store has checked it.
+- User-script managers can keep a connection open between a script and its extension. A saved Tampermonkey script now runs again when you reload its page.
+- Tampermonkey can register its script-install redirects and open a confirmation window with Install and Cancel when you follow a supported script link.
+- Extensions receive history-removal notices only for sites they can see. Download cleanup respects date and size filters and refuses unsupported filters before removing any entries.
+- Clearing one kind of extension site setting preserves its other settings. An extension's temporary network rules survive opening it in another workspace.
+- An extension's side panel reports its position even while the window is covered. Tab recording shows as pending until capture starts, and the red dot appears when the tab is being captured.
+- **You choose where each one runs:** every site, every site except some, only on some, or only when you click it. **Turn off on this site** is in the shield panel, in the toolbar and on its card.
+- **A puzzle button in the toolbar** lists your extensions, grouped by what each can do on the site you're on: can read and change it, waiting for your click (**Give access**), turned off here (**Turn on**), or doesn't need it. Pin one to give it its own button, with its badge; its popup opens right under it. Each has a ⋯ menu, and a right-click on its button, for Options, Turn off on this site, Unpin and Remove.
+- **The Extensions page** (Manage extensions, or the command palette) shows a card for each: where it came from, where it runs, which workspaces have it, the programs it may start, what it can do and **what it contacted**. Developer mode reloads an extension from its folder, by itself when you save a file there.
+- **Extensions can do more than Electron allows by itself:** network-rule blockers (such as uBlock Origin Lite), cookie editors, screenshots and eyedroppers (a picture of the visible tab), reading aloud, keeping the computer awake, settings saved for syncing (kept on this computer), more control of tabs and windows, and rounded facts about the computer.
+- **Extensions' own pages inside Aphrodite:** one can be your new tab page (a notice the first time offers Undo, and its card switches it), show a panel docked beside the page, or answer a keyword you type in the address bar.
+- **Screen and tab recorders, page savers and sign-in:** an extension may record your screen or a window you choose in Aphrodite's own picker, record a tab after you allow it (a red dot shows on the tab, and Stop recording is in its menu), save whole pages (asked the first time), and open sign-in pages in a window that names the site.
+- **Extensions that work with your browser data:** bookmark managers (on Aphrodite's bookmarks), history and most-visited tools, recently closed tabs, downloads managers, cleaners, search, and user-script managers such as Tampermonkey and Violentmonkey.
+- **Check for updates** asks the stores about your extensions only when you press it. An update that wants more access shows what's new first; you can keep the version you have.
+- **Block other sites' scripts.** A gentler choice beside Block scripts: a site runs its own scripts, and scripts from other companies' servers are held back, even ones no blocklist knows yet. On in Strict workspaces, per site from the shield button, which also lists what was held back so you can allow a source for that site. Each site on shared hosting (like github.io) counts as its own, and space anyone can rent from a cloud company doesn't count as that company. Pages embedded from other sites (videos, maps) still run their own built-in scripts.
+
+### Privacy and security
+How extensions are kept in check:
+- **Never in private windows.** In workspaces with their own logins, you switch each extension on separately.
+- **Their own connections go through your shields:** dangerous and tracking addresses are refused, plain HTTP is made secure, and **they can't reach your computer or your home network** unless their own list names an address there.
+- **Harder for sites to spot your extensions:** each install gets an ID of its own, so sites can't look for it by its well-known one (except extensions from the Chrome Web Store that talk to a program on your computer, which need their real ID; one added from a file always gets its own), and a site you turned an extension off for can't load its files.
+- **Packages are checked:** Chrome packages must be properly signed, files from Firefox Add-ons must match what Mozilla states, and files that try to reach outside their folder, links and zip bombs are refused. An extension whose files change on your computer is turned off until you say so.
+- **"Turned off on this site" holds:** an extension can't run scripts on a site you turned it off for, also through frames of that site inside another page or while a tab is being redirected there, and it can't contact it.
+- **Updates that reach further always ask,** compared site by site and permission by permission, and files changed on your computer can't be accepted by changing an extension's settings.
+- **Extensions' network rules come after your shields:** they can block more, but never let through anything Aphrodite blocked, and they can't remove its privacy signal or its cookie protection.
+- **Cookies only where allowed:** an extension sees and changes cookies only on sites it can reach, never on a site you turned it off for.
+- **Recording asks every time,** and each yes allows one recording. A sign-in code meant for an extension is caught by Aphrodite and never sent anywhere else.
+- **Your data, your yes:** an extension asks the first time it wants to delete history or browsing data, open or delete downloaded files, or make sites stricter. It can never loosen a site's settings or change privacy settings, and it never sees private windows.
+- **Nothing is synced:** settings an extension saves for syncing stay on this computer. Facts about the computer are rounded so they can't single you out.
+- **Some permissions are never given**, such as full control of pages (debugger) and routing your traffic elsewhere (proxy). Starting a program on your computer, or asking for more access later, needs your yes first.
+- **Stores are contacted only when you ask**, with no cookies or sign-in, after a notice saying what they'll see. Extensions are never updated by themselves.
 - **Every version in one list.** Settings → About & updates shows this version's changes in full, and every earlier one, test versions included, under **Previous versions**: a line each that opens its notes.
 - **Style the newest parts.** Interface CSS's list of every part now includes the assistant, the privacy receipt, What this site saw, update notes and the changelog. Its examples show how to style light mode and dark mode separately.
 - **Easier to read: What this site saw.** The two hidden drawings sit one above the other at full size, instead of side by side at half size.
