@@ -1,5 +1,26 @@
 # Changelog
 
+## 3.1.0 (2026-11-20)
+- Fixed overlapping address text when another window covers Aphrodite while the URL is selected.
+- **VPN extensions work.** Browser "VPN" extensions route your browsing through their own servers (they're proxy switchers, not VPN apps). The first time one wants to, Aphrodite asks you, naming the servers: **Let it route your browsing through its servers?** Your answer is remembered for that extension.
+- **You can see it and take it back.** While one is active, the shield panel says **Your traffic goes through** that extension, and its card on the Extensions page shows **Routes your browsing through its servers**. The ✕ there goes straight back to a direct connection, and the extension asks again next time.
+- **It stays on across restarts,** as in Chrome. Aphrodite puts it back as it starts, before it opens your tabs. Turning the extension off, switching it off for a workspace or removing it goes back to a direct connection; turning it on again brings its proxy back.
+- **Signing in to its servers** works: only the extension that set the proxy is asked for its own servers' sign-in, never for a site's.
+- **Fixed: a click in an extension's popup could be lost.** When an extension's background had gone idle, a button in its popup (a VPN's Connect, for example) sometimes did nothing. Its background now keeps running while its popup, side panel or options page is open.
+
+- Extension background workers now receive local storage changes from their workspace, including changes made by a popup and the worker's own writes. Browsec uses these notifications to apply its routing settings.
+- Local Firefox XPI installers show whether Mozilla signed the package. Aphrodite verifies supported signatures offline and rejects changes to the signed files.
+- Extensions with host access and blocking web-request permission can edit supported HTTP request and response headers. Aphrodite still applies its privacy rules afterward.
+- Developer mode includes an **Inspect worker** console for each enabled workspace, with a line breakpoint and a Resume control. Background workers now receive install, update and startup notifications.
+- Saved extension proxies restore before the first tab sends its request. A restore failure blocks the request, and proxy sign-in stays in the owning workspace.
+
+### Privacy and security
+- **Never in private windows.** Private windows always connect as before, and extensions can't ask for them.
+- **One extension at a time** controls the proxy in a window or workspace; another is told so and can't take over.
+- **Your shields keep working behind it:** the checks that stop sites reaching your computer or home network through a proxy are on from the moment it's set. Aphrodite also tests, as it does for VPN apps, whether its servers refuse names that lead to your network.
+- **What isn't allowed:** automatic proxy discovery (anyone on your network could answer it), proxy scripts fetched over plain HTTP, and server addresses Aphrodite can't check. Firefox's per-request proxying isn't available: such an extension shows an error instead of looking connected while your browsing goes direct.
+- **With Prevent WebRTC IP leaks on** (the default), video-call features may only connect through the proxy. If you turned it off, the shield panel says that your real address can still show.
+
 ## 3.0.0 (2026-11-19)
 - **Extensions are back, Chrome and Firefox.** Add them from the Chrome Web Store (its button reads **Add to Aphrodite**) or Firefox Add-ons (Aphrodite offers it on an extension's page), from a .zip, .crx or .xpi file, or from a folder, your own or one from GitHub. Before anything is added, you see in plain words what it will be able to do, the most serious first, and whether a store has checked it.
 - User-script managers can keep a connection open between a script and its extension. A saved Tampermonkey script now runs again when you reload its page.
@@ -32,6 +53,8 @@ How extensions are kept in check:
 - **Nothing is synced:** settings an extension saves for syncing stay on this computer. Facts about the computer are rounded so they can't single you out.
 - **Some permissions are never given**, such as full control of pages (debugger) and routing your traffic elsewhere (proxy). Starting a program on your computer, or asking for more access later, needs your yes first.
 - **Stores are contacted only when you ask**, with no cookies or sign-in, after a notice saying what they'll see. Extensions are never updated by themselves.
+
+## 2.22.0 (2026-11-18)
 - **Every version in one list.** Settings → About & updates shows this version's changes in full, and every earlier one, test versions included, under **Previous versions**: a line each that opens its notes.
 - **Style the newest parts.** Interface CSS's list of every part now includes the assistant, the privacy receipt, What this site saw, update notes and the changelog. Its examples show how to style light mode and dark mode separately.
 - **Easier to read: What this site saw.** The two hidden drawings sit one above the other at full size, instead of side by side at half size.

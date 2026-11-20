@@ -4,6 +4,10 @@ Aphrodite is proprietary software by SolidCarbon Works, and it's built with the 
 
 Generated 2026-11-11 for Aphrodite 2.10.0. Regenerate it whenever dependencies change.
 
+## Firefox package verification
+
+Local XPI verification uses PKI.js 3.4.3, ASN1.js 3.1.0 and bytestreamjs 2.0.1 under BSD-3-Clause, and pvutils 1.2.0, pvtsutils 1.3.6 and @noble/hashes 1.8.0 under MIT. The full license texts are in [XPI dependency licenses](licenses/XPI-dependencies.txt). The offline trust anchor is the production add-on signing certificate published with Firefox. [Mozilla certificate](https://github.com/mozilla-firefox/firefox/blob/main/security/manager/ssl/addons-public.pem)
+
 ## Chromium and Electron
 
 Aphrodite runs on **Electron 45.0.0** (MIT licence, © GitHub Inc. and Electron contributors), which includes **Chromium** (BSD-3-Clause and many other licences) and **Node.js** (MIT).

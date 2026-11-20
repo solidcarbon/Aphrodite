@@ -13,7 +13,7 @@ These are stored only in your Aphrodite profile folder on your computer, and we 
 - the made-up device details each site sees (see below)
 - signatures you ask the PDF editor to remember (kept as pictures, encrypted with your operating system's protection for your account; never in a private window)
 - disguised trackers Aphrodite has caught, for two weeks, so it can block them at once next time (scrambled, so the file doesn't show which sites they were on, and encrypted; not from private windows or with Save browsing history off; forgotten with Clear history)
-- extensions you add, your choices for each (where it runs, which programs it may start), and what each extension stores for itself (deleted when you remove it); other sites whose scripts you allowed on a site (never from a private window)
+- extensions you add, your choices for each (where it runs, which programs it may start, whether it may route your browsing, and the proxy servers it set), and what each extension stores for itself (deleted when you remove it); other sites whose scripts you allowed on a site (never from a private window)
 
 With **Save browsing history** off, no visit is written: no history list, downloads list, visit times or privacy receipts. Sites' own cookies and data, and the list of sites that stored data, stay until you delete them. **Clear history** removes the history list together with visit times, receipts, the Leak log and noticed changes. A **private window** writes none of these, and nothing you choose in it (lowering shields, trusting a site, continuing to an HTTP site) is kept after it closes.
 
@@ -59,6 +59,8 @@ If you use a VPN app, Aphrodite tests it in the background, about every ten minu
 ## Extensions
 
 Extensions are made by other people and companies, and **their own privacy policies apply to what they do**. Before you add one, Aphrodite shows in plain words what it will be able to do, and says so when it isn't from a store. What Aphrodite does around them:
+- **Local Firefox files.** Aphrodite checks supported Mozilla signatures on this computer and displays the result before installation. Checking a local file makes no request to Mozilla.
+- **Request headers.** An extension with blocking web-request permission and site access can see the request URL and edit supported HTTP headers in that workspace. The header listener receives a limited set of fields. Aphrodite applies Global Privacy Control and its cookie protections afterward.
 - **Where they run:** never in private windows. Each one runs on the sites you choose (every site, every site except some, only some, or only when you click it), and you can turn one off on any site.
 - **Their own connections** go through Aphrodite's protections: known dangerous and tracking addresses are refused, plain HTTP is made secure, and they can't reach your computer or your home network unless their own list names an address there. Each extension's card lists the sites it contacted, kept in memory until Aphrodite closes.
 - **Their own rules** for blocking or redirecting requests (declarativeNetRequest) run only after Aphrodite's protections: they can block more, never less, and can't remove Aphrodite's privacy signal or cookie protection. Their rules and settings are kept on this computer.
@@ -68,6 +70,7 @@ Extensions are made by other people and companies, and **their own privacy polic
 - **Sign-in windows** an extension opens show the site's name; the code meant for the extension is handed to it directly and never sent anywhere else.
 - **Your bookmarks, history and downloads:** an extension with those permissions can read them on this computer (never a private window's). It asks the first time it wants to delete history or browsing data, or open or delete downloaded files. It can make a site stricter but never looser, and it can only read privacy settings, never change them.
 - **User scripts** an extension adds run only on sites it can reach, never on a site you turned it off for, each in a space of its own.
+- **VPN extensions (proxies):** an extension can send your browsing through its own servers only after you say yes; **whoever runs those servers can see which sites you visit**, and their own privacy policy applies. It never applies to private windows, the shield panel shows it while it's active, and taking it back on the extension's card restores your computer's proxy settings. A sign-in to its servers is answered by that extension only.
 - **Asking first:** an extension can start a program on your computer (native messaging) or get more access only after you say yes. Apart from the store contacts below, Aphrodite doesn't send anything about your extensions anywhere.
 - **Stores:** Aphrodite contacts the Chrome Web Store (Google) or Firefox Add-ons (Mozilla) only when you choose to add an extension from one, or press **Check for updates**, after a notice saying what they'll see. They see your IP address and which extensions you ask about; Google also sees a browser version number, which its store needs to pick the right file. No cookies or sign-in are sent.
 
