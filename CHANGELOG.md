@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.3 (2026-11-21)
+- **Fixed:** your Studio theme icon now stays on the pinned taskbar, Start menu and desktop shortcuts after closing Aphrodite, even when Windows had a shortcut locked or you closed right after switching themes.
+- **Fixed:** changed live clips in the sidebar now use a concentric corner curve that matches the clip shelf around them.
+
 ## 3.2.2 (2026-11-21)
 - **Fixed:** download cards stay anchored in the bottom-right corner as they update instead of jumping to the top right.
 - **Fixed:** live clip cards on the new tab page now keep a fixed height with smoother rounded corners, and long previous values in the footer truncate cleanly on one line.
