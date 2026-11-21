@@ -19,7 +19,7 @@ Unless the law where you live says otherwise, or a licence named in section 4 al
 2. modify Aphrodite, or create derivative works based on it;
 3. decompile, disassemble, unpack or reverse engineer Aphrodite, or try to get its source code;
 4. remove or change any copyright, trademark or licence notice in Aphrodite;
-5. use the Aphrodite name, the Petal A logo or any confusingly similar name or logo (see section 6);
+5. use the Aphrodite name, the Petal A logo, the Twin capsules logo or any confusingly similar name or logo (see section 6);
 6. use Aphrodite to build a competing product, or to train machine-learning models to reproduce it;
 7. get around the update system, or publish installers that claim to be Aphrodite.
 
@@ -52,7 +52,7 @@ Aphrodite offers models of different sizes. Its suggestion of which one suits yo
 
 ## 6. Trademarks
 
-"Aphrodite" and the Petal A logo are trademarks of SolidCarbon Works. This agreement gives you no right to use them. See `TRADEMARKS.md` for what's allowed, such as writing a review or an article about Aphrodite.
+"Aphrodite", the Petal A logo and the Twin capsules logo are trademarks of SolidCarbon Works. This agreement gives you no right to use them. See `TRADEMARKS.md` for what's allowed, such as writing a review or an article about Aphrodite.
 
 ## 7. Updates
 

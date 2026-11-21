@@ -1,10 +1,17 @@
 # Changelog
 
+## 3.2.0 (2026-11-21)
+- **A second logo mark in Studio.** In Studio → Layout → Logo mark, you can switch between **Petals (Aphrodite)** and **Twin capsules** across the sidebar, tabs and built-in pages.
+- **Downloads live in the bottom-right corner.** Running, paused, finished and interrupted downloads now show in a compact bottom-right card with a bottom progress line, an icon that morphs smoothly between states, and icon buttons (Pause, Resume, Retry, Open file, Show in folder, Cancel, Dismiss). Interrupted downloads show a warning triangle badge.
+- **Quieter notices in the top-right corner.** Browser notices now share one card layout that unfolds from and folds back into the top-right corner, while downloads sit separately at the bottom right.
+- **Custom hover tooltips.** Pointing at toolbar and sidebar buttons shows a dark capsule tooltip with keyboard shortcuts styled as key badges.
+- **Live clips and the hidden IP pill.** Live clips sit in a compact paper shelf in the sidebar and show smooth trend lines and the previous value (`Was …`) on the new tab page. The hidden IP address in the toolbar now shows centered dots (`•••.•••.•••.•••`) that match the height and position of the shown address.
+
 ## 3.1.0 (2026-11-20)
 - Fixed overlapping address text when another window covers Aphrodite while the URL is selected.
 - **VPN extensions work.** Browser "VPN" extensions route your browsing through their own servers (they're proxy switchers, not VPN apps). The first time one wants to, Aphrodite asks you, naming the servers: **Let it route your browsing through its servers?** Your answer is remembered for that extension.
 - **You can see it and take it back.** While one is active, the shield panel says **Your traffic goes through** that extension, and its card on the Extensions page shows **Routes your browsing through its servers**. The ✕ there goes straight back to a direct connection, and the extension asks again next time.
-- **It stays on across restarts,** as in Chrome. Aphrodite puts it back as it starts, before it opens your tabs. Turning the extension off, switching it off for a workspace or removing it goes back to a direct connection; turning it on again brings its proxy back.
+- **It stays on across restarts,** as in Chrome. Aphrodite puts it back as it starts, before it opens your tabs. If restoring the proxy fails, requests wait instead of going direct. Turning the extension off, switching it off for a workspace or removing it goes back to a direct connection; turning it on again brings its proxy back.
 - **Signing in to its servers** works: only the extension that set the proxy is asked for its own servers' sign-in, never for a site's.
 - **Fixed: a click in an extension's popup could be lost.** When an extension's background had gone idle, a button in its popup (a VPN's Connect, for example) sometimes did nothing. Its background now keeps running while its popup, side panel or options page is open.
 
@@ -12,10 +19,8 @@
 - Local Firefox XPI installers show whether Mozilla signed the package. Aphrodite verifies supported signatures offline and rejects changes to the signed files.
 - Extensions with host access and blocking web-request permission can edit supported HTTP request and response headers. Aphrodite still applies its privacy rules afterward.
 - Developer mode includes an **Inspect worker** console for each enabled workspace, with a line breakpoint and a Resume control. Background workers now receive install, update and startup notifications.
-- Saved extension proxies restore before the first tab sends its request. A restore failure blocks the request, and proxy sign-in stays in the owning workspace.
 
 ### Privacy and security
-- **Never in private windows.** Private windows always connect as before, and extensions can't ask for them.
 - **One extension at a time** controls the proxy in a window or workspace; another is told so and can't take over.
 - **Your shields keep working behind it:** the checks that stop sites reaching your computer or home network through a proxy are on from the moment it's set. Aphrodite also tests, as it does for VPN apps, whether its servers refuse names that lead to your network.
 - **What isn't allowed:** automatic proxy discovery (anyone on your network could answer it), proxy scripts fetched over plain HTTP, and server addresses Aphrodite can't check. Firefox's per-request proxying isn't available: such an extension shows an error instead of looking connected while your browsing goes direct.
@@ -40,7 +45,6 @@
 
 ### Privacy and security
 How extensions are kept in check:
-- **Never in private windows.** In workspaces with their own logins, you switch each extension on separately.
 - **Their own connections go through your shields:** dangerous and tracking addresses are refused, plain HTTP is made secure, and **they can't reach your computer or your home network** unless their own list names an address there.
 - **Harder for sites to spot your extensions:** each install gets an ID of its own, so sites can't look for it by its well-known one (except extensions from the Chrome Web Store that talk to a program on your computer, which need their real ID; one added from a file always gets its own), and a site you turned an extension off for can't load its files.
 - **Packages are checked:** Chrome packages must be properly signed, files from Firefox Add-ons must match what Mozilla states, and files that try to reach outside their folder, links and zip bombs are refused. An extension whose files change on your computer is turned off until you say so.
@@ -51,6 +55,7 @@ How extensions are kept in check:
 - **Recording asks every time,** and each yes allows one recording. A sign-in code meant for an extension is caught by Aphrodite and never sent anywhere else.
 - **Your data, your yes:** an extension asks the first time it wants to delete history or browsing data, open or delete downloaded files, or make sites stricter. It can never loosen a site's settings or change privacy settings, and it never sees private windows.
 - **Nothing is synced:** settings an extension saves for syncing stay on this computer. Facts about the computer are rounded so they can't single you out.
+- **Extensions are disabled in private windows.** In workspaces with their own logins, you switch each extension on separately.
 - **Some permissions are never given**, such as full control of pages (debugger) and routing your traffic elsewhere (proxy). Starting a program on your computer, or asking for more access later, needs your yes first.
 - **Stores are contacted only when you ask**, with no cookies or sign-in, after a notice saying what they'll see. Extensions are never updated by themselves.
 
