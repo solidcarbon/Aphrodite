@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.2.4 (2026-11-21)
+- **Fixed:** hover tooltips near the top-right window controls are no longer clipped by the native Windows titlebar overlay, which is now replaced by Aphrodite’s own minimize, maximize and close buttons.
+- **Fixed:** download cards now use a distinct square **Cancel download** button next to **Dismiss** (`×`), and browser update downloads now appear as a download card in the bottom-right corner.
+- **Fixed:** changing the accent colour in Studio now applies immediately without flying ink threads or overlay pills over the colour picker, and the **Highlights** preview dot stays inside its card instead of floating on the left edge of the page.
+
 ## 3.2.3 (2026-11-21)
 - **Fixed:** your Studio theme icon now stays on the pinned taskbar, Start menu and desktop shortcuts after closing Aphrodite, even when Windows had a shortcut locked or you closed right after switching themes.
 - **Fixed:** changed live clips in the sidebar now use a concentric corner curve that matches the clip shelf around them.
