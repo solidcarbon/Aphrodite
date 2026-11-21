@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.2.2 (2026-11-21)
+- **Fixed:** download cards stay anchored in the bottom-right corner as they update instead of jumping to the top right.
+- **Fixed:** live clip cards on the new tab page now keep a fixed height with smoother rounded corners, and long previous values in the footer truncate cleanly on one line.
+- **Fixed:** choosing **Quiet: nothing shows** under **Studio → Highlights → Changed live clips** now removes all border, fill and dot highlights on changed clips.
+- **Fixed:** pinned taskbar, Start menu and desktop shortcuts now keep smooth, sharp edges for your Studio theme icon while Aphrodite is closed.
+- **Shorter, cleaner descriptions.** Removed redundant explanation lines across tab sleep tooltips, update notices and settings.
+
 ## 3.2.1 (2026-11-21)
 - **Fixed:** long hover tooltips near the right edge of the window no longer cut off mid-word and shift inward to fit on screen.
 - **Fixed:** the **What websites see** pop-up now closes when you click elsewhere on the page, press Esc, or switch windows.
