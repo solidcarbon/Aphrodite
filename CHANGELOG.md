@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.1 (2026-11-21)
+- **Fixed:** long hover tooltips near the right edge of the window no longer cut off mid-word and shift inward to fit on screen.
+- **Fixed:** the **What websites see** pop-up now closes when you click elsewhere on the page, press Esc, or switch windows.
+- **Fixed:** toggling **Show** / **Hide** on your IP address no longer shifts the separating dots or digits.
+- **What’s new stays visible under Status.** Clicking **Later** on an update keeps the new version’s feature list and action button under **Settings → About & updates → Status**.
+
 ## 3.2.0 (2026-11-21)
 - **A second logo mark in Studio.** In Studio → Layout → Logo mark, you can switch between **Petals (Aphrodite)** and **Twin capsules** across the sidebar, tabs and built-in pages.
 - **Downloads live in the bottom-right corner.** Running, paused, finished and interrupted downloads now show in a compact bottom-right card with a bottom progress line, an icon that morphs smoothly between states, and icon buttons (Pause, Resume, Retry, Open file, Show in folder, Cancel, Dismiss). Interrupted downloads show a warning triangle badge.
