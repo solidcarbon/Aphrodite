@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.4.0 (2026-11-23)
+- **Profile data is now encrypted on disk.** History, bookmarks, open tabs, downloads, permissions, protection stats, per-site receipts and fingerprinting seeds are now stored encrypted using your system’s protection for your account (Windows DPAPI, macOS Keychain or your Linux keyring), matching cookies, saved chats and remembered signatures. Existing profiles migrate automatically on first launch.
+- **More realistic estimated time saved.** The new tab page’s time-saved estimate now weights blocked requests by type (scripts, frames and media count more than background beacons), tapers off parallel and repeated requests on a page, and credits skipped redirect trackers and auto-rejected cookie pop-ups. Existing profiles keep their current total and add on top of it.
+- **Clickable links in the Privacy guide.** All “See …” cross-references under **Settings → Privacy guide → Every privacy setting** now jump straight to their section higher up on the page.
+
 ## 3.3.0 (2026-11-23)
 - **`Ctrl+Tab` now switches by recently used tabs.** Tapping `Ctrl+Tab` jumps straight back to the last tab you used in this workspace, and holding `Ctrl` while tapping `Tab` (or `Shift+Tab`) steps further back through your recent tabs. `Ctrl+PageDown` and `Ctrl+PageUp` still move to the next and previous tab in sidebar order.
 - **New keyboard shortcuts.** Added **Copy clean link** (`Ctrl+Shift+C`), **Mute or unmute tab** (`Ctrl+M`), and **Extensions** (`Ctrl+E`), plus customizable entries in **Settings → Shortcuts** for **Assistant**, **Limiters**, **Converter**, and **Hide an element on this page**.

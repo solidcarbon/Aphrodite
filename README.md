@@ -63,7 +63,7 @@ Read, edit, sign and truly redact PDFs, and convert or clean files, all without 
 <td width="33%" valign="top">
 
 ### 🎨 Built to be yours
-Vertical tabs, workspaces with separate logins, live clips, split and reader view, and a live theme studio.
+Vertical tabs, workspaces with separate logins, Chrome & Firefox extensions, live clips, split view and a live theme studio.
 
 </td>
 </tr>
@@ -95,6 +95,7 @@ Every site gets a **shield panel** (left) with its own switches, and a **privacy
 - **Websites can't look into your computer or home network.** A site can't reach programs on your PC or your router, printer and cameras, also not through names that secretly point there (DNS rebinding). If a website tries to send you to such an address, Aphrodite asks first. Every attempt is on the privacy receipt.
 - **Tab icons can't be used to follow you**, and **"What it saw"** on the receipt shows the made-up fingerprint a site was given next to your real one.
 - **Bot checks work** (Cloudflare, hCaptcha, reCAPTCHA, Arkose, DataDome) without lowering your protection. For a stubborn site, **Trust this site** fixes it and keeps other companies' trackers blocked.
+- **Profile data stays encrypted on disk.** Cookies, history, bookmarks, open tabs, downloads, permissions, stats and site data are encrypted using your system's protection for your account (Windows DPAPI, macOS Keychain or your Linux keyring).
 
 ---
 
@@ -241,9 +242,9 @@ Aphrodite checks this page every few hours and updates itself quietly. Every dow
 </details>
 
 <details>
-<summary><b>Does it support Chrome extensions?</b></summary>
+<summary><b>Does it support Chrome and Firefox extensions?</b></summary>
 <br>
-Not right now. Ad blocking, cookie pop-up refusal and tracker protection are built in, so most people won't need them.
+Yes. You can add Chrome and Firefox extensions from the Chrome Web Store, Firefox Add-ons, a <code>.zip</code>, <code>.crx</code> or <code>.xpi</code> file, or a local folder — including browser VPN extensions. Before installing, Aphrodite explains in plain words what the extension can do, and you choose which sites and workspaces it can run in. Ad blocking, cookie pop-up refusal and tracker protection are still built in, so you don't need extensions for those.
 </details>
 
 <details>
