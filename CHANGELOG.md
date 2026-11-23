@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.3.0 (2026-11-23)
+- **`Ctrl+Tab` now switches by recently used tabs.** Tapping `Ctrl+Tab` jumps straight back to the last tab you used in this workspace, and holding `Ctrl` while tapping `Tab` (or `Shift+Tab`) steps further back through your recent tabs. `Ctrl+PageDown` and `Ctrl+PageUp` still move to the next and previous tab in sidebar order.
+- **New keyboard shortcuts.** Added **Copy clean link** (`Ctrl+Shift+C`), **Mute or unmute tab** (`Ctrl+M`), and **Extensions** (`Ctrl+E`), plus customizable entries in **Settings → Shortcuts** for **Assistant**, **Limiters**, **Converter**, and **Hide an element on this page**.
+- **Cleaner sidebar and shortcuts layout.** Removed the box around the active workspace dot and simplified the **Turn off my theme and styles** row in **Settings → Shortcuts** so `Ctrl+Shift+Alt+M` sits cleanly on the right.
+- **Fixed:** digits in the shield and sidebar tracker counters no longer lift briefly above the baseline while rolling to a new number.
+
 ## 3.2.5 (2026-11-23)
 - **Soft fill is now the default highlight.** In **Studio → Highlights**, both **When you type** (search boxes, text fields, menus and chosen cards) and **Changed live clips** now default to **Soft fill** instead of **Accent outline** on new profiles, presets and resets. Your existing saved choice isn’t changed.
 - **Tactile controls across the sidebar and toolbar.** Bookmarking a page now fills the star with a quick ink bloom, shield counts roll smoothly digit by digit as trackers are blocked, and switching workspaces glides the active dot and tab list in the direction you moved.
