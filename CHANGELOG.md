@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.1 (2026-11-23)
+- **Live Clip notifications now show the right icon with smooth circular edges.** Clip alerts use the clipped site’s own icon when available, or a themed Live Clips clipping badge that adapts to your Studio theme, displayed with a smooth circular crop on Windows instead of a sharp-cornered square.
+- **Fixed:** workspace and pop-up menus now size cleanly to fit longer entries (such as **Protection: Your Shields settings** and **Share logins with other workspaces…**) on a single line with tighter, even spacing across every font.
+
 ## 3.4.0 (2026-11-23)
 - **Profile data is now encrypted on disk.** History, bookmarks, open tabs, downloads, permissions, protection stats, per-site receipts and fingerprinting seeds are now stored encrypted using your system’s protection for your account (Windows DPAPI, macOS Keychain or your Linux keyring), matching cookies, saved chats and remembered signatures. Existing profiles migrate automatically on first launch.
 - **More realistic estimated time saved.** The new tab page’s time-saved estimate now weights blocked requests by type (scripts, frames and media count more than background beacons), tapers off parallel and repeated requests on a page, and credits skipped redirect trackers and auto-rejected cookie pop-ups. Existing profiles keep their current total and add on top of it.
