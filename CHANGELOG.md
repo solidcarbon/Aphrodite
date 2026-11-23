@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.2.5 (2026-11-23)
+- **Soft fill is now the default highlight.** In **Studio → Highlights**, both **When you type** (search boxes, text fields, menus and chosen cards) and **Changed live clips** now default to **Soft fill** instead of **Accent outline** on new profiles, presets and resets. Your existing saved choice isn’t changed.
+- **Tactile controls across the sidebar and toolbar.** Bookmarking a page now fills the star with a quick ink bloom, shield counts roll smoothly digit by digit as trackers are blocked, and switching workspaces glides the active dot and tab list in the direction you moved.
+- **Livelier tabs and folders.** Tabs playing sound show three softly moving bars (and a muted speaker when silenced), and tab folders fold and unfold smoothly in the sidebar.
+- **Split view snaps to the middle.** Dragging the split divider snaps gently to 50/50 near the centre, double-clicking it resets both panes to equal width, and the active pane’s accent line expands cleanly across its top edge.
+- **Consistent icon motion in the sidebar.** Pointing at Private window, Assistant, Converter, Studio, Settings, Search everything, History, Downloads and New folder now gives each icon a quiet hint of what it does, matching Limiters and New tab. Everything turns off cleanly with **Settings → General → Animations**.
+
 ## 3.2.4 (2026-11-21)
 - **Fixed:** hover tooltips near the top-right window controls are no longer clipped by the native Windows titlebar overlay, which is now replaced by Aphrodite’s own minimize, maximize and close buttons.
 - **Fixed:** download cards now use a distinct square **Cancel download** button next to **Dismiss** (`×`), and browser update downloads now appear as a download card in the bottom-right corner.
