@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.4.2 (2026-11-23)
+- **Fixed:** closing a site in a **Strict** or **Forget me** separate-login workspace no longer signs you out of that same site in your other workspaces — cookies, site data and fingerprinting seeds are now cleared only in that workspace’s own session (including on quit).
+- **Fixed:** long notices and licence texts on **Open-source licences** (`aphrodite://licences`) now scroll cleanly inside their boxes instead of being clipped off.
+- **Cleaner Settings navigation:** clicking a topic in the **Settings** sidebar now scrolls straight to that section with no grey active highlight or mid-scroll flicker, matching **Studio**.
+
 ## 3.4.1 (2026-11-23)
 - **Live Clip notifications now show the right icon with smooth circular edges.** Clip alerts use the clipped site’s own icon when available, or a themed Live Clips clipping badge that adapts to your Studio theme, displayed with a smooth circular crop on Windows instead of a sharp-cornered square.
 - **Fixed:** workspace and pop-up menus now size cleanly to fit longer entries (such as **Protection: Your Shields settings** and **Share logins with other workspaces…**) on a single line with tighter, even spacing across every font.
