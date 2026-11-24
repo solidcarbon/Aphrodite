@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.6.0 (2026-11-25)
+- **Security fix:** a web page saved on your computer (an .html file you open in Aphrodite) could read other files on your computer, as Chrome never allows. Local pages are now kept apart from your other files, as in Chrome. Aphrodite's own window now loads from a private internal address instead of a file on disk, which is what made the fix possible.
+- **Each site sees a different computer.** Processor cores and memory are now common amounts that differ from site to site (for example 8 cores and 16 GB on one, 12 cores and 8 GB on another) instead of the same 8 cores and 8 GB everywhere, and never more than your computer really has. A well-known graphics card is shown as another model of its own generation, different on each site. A site you come back to sees the same values while it keeps its cookies; private windows get new ones every launch.
+- A site that asks for your memory in a request header now gets the same made-up value its scripts read.
+- **Storage space:** each site is now told a share of a common drive size of its own (for example 153 GB on one site, 600 GB on another) instead of the same 307 GB everywhere.
+- **Poison Preview** now shows the other site's cores, memory and graphics card too, not only its drawing and sound.
+
 ## 3.5.0 (2026-11-24)
 - **A guided tour.** A short tour now shows where everything lives: your shield and the IP button, **Shields**, **Privacy & security**, the **Privacy guide**, your records, **Live Clips** and hiding parts of a page, workspaces, **Studio**, the **Converter**, the **Limiters**, private windows and the assistant. It highlights one control at a time; use **Next**, **Back** or the arrow keys, and **Skip tour** or Esc to close it. It opens once, after the welcome card, for new and existing profiles. Replay it anytime from **Settings → About & updates → Take the tour**, or type “tour” in **Search everything** (Ctrl+K).
 
