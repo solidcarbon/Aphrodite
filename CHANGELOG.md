@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.5.0 (2026-11-24)
+- **A guided tour.** A short tour now shows where everything lives: your shield and the IP button, **Shields**, **Privacy & security**, the **Privacy guide**, your records, **Live Clips** and hiding parts of a page, workspaces, **Studio**, the **Converter**, the **Limiters**, private windows and the assistant. It highlights one control at a time; use **Next**, **Back** or the arrow keys, and **Skip tour** or Esc to close it. It opens once, after the welcome card, for new and existing profiles. Replay it anytime from **Settings → About & updates → Take the tour**, or type “tour” in **Search everything** (Ctrl+K).
+
 ## 3.4.3 (2026-11-24)
 - **Fixed:** **Forget me** in one workspace now deletes everything Aphrodite noted about the site there (visits, receipts, Leak log entries, cookie pop-up answers), even when another workspace has visited it too. Workspace 1 and the workspaces sharing its logins keep one set of site notes; each workspace with its own logins keeps its own, so a **Strict** workspace’s visits are kept in its own notes and go with them when it forgets the site. Cookies & site data, receipts and the Leak log still show every workspace together.
 - **Fixed:** quitting Aphrodite now also forgets sites still open in a **Strict** workspace that shares Workspace 1’s logins, and sites closed in the few seconds before you quit.
