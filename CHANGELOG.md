@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.4.3 (2026-11-24)
+- **Fixed:** **Forget me** in one workspace now deletes everything Aphrodite noted about the site there (visits, receipts, Leak log entries, cookie pop-up answers), even when another workspace has visited it too. Workspace 1 and the workspaces sharing its logins keep one set of site notes; each workspace with its own logins keeps its own, so a **Strict** workspace’s visits are kept in its own notes and go with them when it forgets the site. Cookies & site data, receipts and the Leak log still show every workspace together.
+- **Fixed:** quitting Aphrodite now also forgets sites still open in a **Strict** workspace that shares Workspace 1’s logins, and sites closed in the few seconds before you quit.
+- **Studio:** removed the **Current menu item** part, which no longer appears since Settings dropped its menu highlight in 3.4.2.
+
 ## 3.4.2 (2026-11-23)
 - **Fixed:** closing a site in a **Strict** or **Forget me** separate-login workspace no longer signs you out of that same site in your other workspaces — cookies, site data and fingerprinting seeds are now cleared only in that workspace’s own session (including on quit).
 - **Fixed:** long notices and licence texts on **Open-source licences** (`aphrodite://licences`) now scroll cleanly inside their boxes instead of being clipped off.
