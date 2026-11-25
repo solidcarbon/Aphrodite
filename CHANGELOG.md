@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.6.1 (2026-11-25)
+- **Storage space:** every site is now told the same figure Chrome tells it (what the site has stored, plus 10 GB), in private windows too. 3.6.0 gave each site a made-up drive size instead, which hid your disk but could set Aphrodite apart from Chrome, which no longer reports drive sizes.
+
 ## 3.6.0 (2026-11-25)
 - **Security fix:** a web page saved on your computer (an .html file you open in Aphrodite) could read other files on your computer, as Chrome never allows. Local pages are now kept apart from your other files, as in Chrome. Aphrodite's own window now loads from a private internal address instead of a file on disk, which is what made the fix possible.
 - **Each site sees a different computer.** Processor cores and memory are now common amounts that differ from site to site (for example 8 cores and 16 GB on one, 12 cores and 8 GB on another) instead of the same 8 cores and 8 GB everywhere, and never more than your computer really has. A well-known graphics card is shown as another model of its own generation, different on each site. A site you come back to sees the same values while it keeps its cookies; private windows get new ones every launch.
