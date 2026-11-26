@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.7.0 (2026-11-26)
+- **Aphrodite's own connections go through your VPN extension.** Before, with a VPN extension on, what Aphrodite downloads by itself still went out with your own address: filter lists, update checks, the IP button, the time-zone lookup, the advertisers' list, extension stores, assistant models, privacy-policy checks and anonymous Live Clips. They now go through the VPN extension too.
+- **New setting: Aphrodite's own connections** (Settings → Privacy). **Through my VPN extension only** (the default): if the VPN can't be reached, they wait and try again, never around it. **VPN extension first, then my normal connection**: you're told when one goes around it. **Always my normal connection**: as before.
+- **Each workspace uses its own VPN extension.** A privacy-policy check or an anonymous Live Clip started in a workspace goes only through that workspace's VPN extension. While it isn't running, with "VPN only" they wait instead of going out without it.
+- **Lookups that name the sites you visit go through the VPN extension.** Unmasking disguised trackers and the home-network check used to ask outside the VPN while your tab used one.
+- **The IP button shows what your tab's sites see.** With a VPN extension on, it showed your own address instead of the VPN's.
+- **Fixed:** a page could fail once just after a VPN extension connected (Aphrodite closed every connection when the same proxy was set again).
+- **Fixed:** Aphrodite's own downloads through a VPN that wants a sign-in could be refused after three in a row.
+- When an update can't be checked while a VPN extension is on, the message says the VPN may be why.
+
 ## 3.6.1 (2026-11-25)
 - **Storage space:** every site is now told the same figure Chrome tells it (what the site has stored, plus 10 GB), in private windows too. 3.6.0 gave each site a made-up drive size instead, which hid your disk but could set Aphrodite apart from Chrome, which no longer reports drive sizes.
 
